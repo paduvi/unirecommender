@@ -80,6 +80,7 @@ const get_list_university_major_in_branch = async (branch, university) => {
         await branch_data.reduce((p1, branch) => p1
             .then(() => list_university.reduce((p2, university) => p2
                 .then(() => fn(branch.id, university.id)), Promise.resolve())), Promise.resolve());
+        console.log('write to file');
         await fs.writeJson('../src/data/major.json', major_data, {spaces: '\t'});
         console.log('Done');
         process.exit(0);
