@@ -1,0 +1,758 @@
+[
+	{
+		"id": "A00",
+		"label": "A00 - Toán, Vật lí, Hóa học"
+	},
+	{
+		"id": "A01",
+		"label": "A01 - Toán, Vật lí, Tiếng Anh"
+	},
+	{
+		"id": "B00",
+		"label": "B00 - Toán, Hóa học, Sinh học"
+	},
+	{
+		"id": "C00",
+		"label": "C00 - Ngữ văn, Lịch sử, Địa lí"
+	},
+	{
+		"id": "D01",
+		"label": "D01 - Ngữ văn, Toán, Tiếng Anh"
+	},
+	{
+		"id": "D02",
+		"label": "D02 - Ngữ văn, Toán, Tiếng Nga"
+	},
+	{
+		"id": "D03",
+		"label": "D03 - Ngữ văn, Toán, Tiếng Pháp"
+	},
+	{
+		"id": "D04",
+		"label": "D04 - Ngữ văn, Toán, Tiếng Trung"
+	},
+	{
+		"id": "D05",
+		"label": "D05 - Ngữ văn, Toán, Tiếng Đức"
+	},
+	{
+		"id": "D06",
+		"label": "D06 - Ngữ văn, Toán, Tiếng Nhật"
+	},
+	{
+		"id": "A02",
+		"label": "A02 - Toán, Vật lí, Sinh học"
+	},
+	{
+		"id": "A03",
+		"label": "A03 - Toán, Vật lí, Lịch sử"
+	},
+	{
+		"id": "A04",
+		"label": "A04 - Toán, Vật lí, Địa lí"
+	},
+	{
+		"id": "A05",
+		"label": "A05 - Toán, Hóa học, Lịch sử"
+	},
+	{
+		"id": "A06",
+		"label": "A06 - Toán, Hóa học, Địa lí"
+	},
+	{
+		"id": "A07",
+		"label": "A07 - Toán,Lịch sử, Địa lí"
+	},
+	{
+		"id": "A08",
+		"label": "A08 - Toán, Lịch sử, Giáo dục công dân"
+	},
+	{
+		"id": "A09",
+		"label": "A09 - Toán,Địa lý, Giáo dục công dân"
+	},
+	{
+		"id": "A10",
+		"label": "A10 - Toán,Lý, Giáo dục công dân"
+	},
+	{
+		"id": "A11",
+		"label": "A11 - Toán,Hóa, Giáo dục công dân"
+	},
+	{
+		"id": "A12",
+		"label": "A12 - Toán,Khoa học tự nhiên, KH xã hội"
+	},
+	{
+		"id": "A14",
+		"label": "A14 - Toán,Khoa học tự nhiên, Địa lí"
+	},
+	{
+		"id": "A15",
+		"label": "A15 - Toán,KH tự nhiên, Giáo dục công dân"
+	},
+	{
+		"id": "A16",
+		"label": "A16 - Toán,Khoa học tự nhiên, Ngữ văn"
+	},
+	{
+		"id": "A17",
+		"label": "A17 - Toán,Vật lý, Khoa học xã hội"
+	},
+	{
+		"id": "A18",
+		"label": "A18 - Toán,Hoá học, Khoa học xã hội"
+	},
+	{
+		"id": "B01",
+		"label": "B01 - Toán, Sinh học, Lịch sử"
+	},
+	{
+		"id": "B02",
+		"label": "B02 - Toán, Sinh học, Địa lí"
+	},
+	{
+		"id": "B03",
+		"label": "B03 - Toán, Sinh học, Ngữ văn"
+	},
+	{
+		"id": "B04",
+		"label": "B04 - Toán, Sinh học, Giáo dục công dân"
+	},
+	{
+		"id": "B05",
+		"label": "B05 - Toán, Sinh học, Khoa học xã hội"
+	},
+	{
+		"id": "B08",
+		"label": "B08 - Toán, Sinh học, Tiếng Anh"
+	},
+	{
+		"id": "C01",
+		"label": "C01 - Ngữ văn, Toán, Vật lí"
+	},
+	{
+		"id": "C02",
+		"label": "C02 - Ngữ văn, Toán, Hóa học"
+	},
+	{
+		"id": "C03",
+		"label": "C03 - Ngữ văn, Toán, Lịch sử"
+	},
+	{
+		"id": "C04",
+		"label": "C04 - Ngữ văn, Toán, Địa lí"
+	},
+	{
+		"id": "C05",
+		"label": "C05 - Ngữ văn, Vật lí, Hóa học"
+	},
+	{
+		"id": "C06",
+		"label": "C06 - Ngữ văn, Vật lí, Sinh học"
+	},
+	{
+		"id": "C07",
+		"label": "C07 - Ngữ văn, Vật lí, Lịch sử"
+	},
+	{
+		"id": "C08",
+		"label": "C08 - Ngữ văn, Hóa học, Sinh học"
+	},
+	{
+		"id": "C09",
+		"label": "C09 - Ngữ văn, Vật lí, Địa lí"
+	},
+	{
+		"id": "C10",
+		"label": "C10 - Ngữ văn, Hóa học, Lịch sử"
+	},
+	{
+		"id": "C12",
+		"label": "C12 - Ngữ văn, Sinh học, Lịch sử"
+	},
+	{
+		"id": "C13",
+		"label": "C13 - Ngữ văn, Sinh học, Địa lí"
+	},
+	{
+		"id": "C14",
+		"label": "C14 - Ngữ văn, Toán, Giáo dục công dân"
+	},
+	{
+		"id": "C15",
+		"label": "C15 - Ngữ văn, Toán, Khoa học xã hội"
+	},
+	{
+		"id": "C16",
+		"label": "C16 - Ngữ văn, Vật lí, Giáo dục công dân"
+	},
+	{
+		"id": "C19",
+		"label": "C19 - Ngữ văn, Lịch sử, Giáo dục công dân"
+	},
+	{
+		"id": "C20",
+		"label": "C20 - Ngữ văn, Địa lí, Giáo dục công dân"
+	},
+	{
+		"id": "D07",
+		"label": "D07 - Toán, Hóa học, Tiếng Anh"
+	},
+	{
+		"id": "D08",
+		"label": "D08 - Toán, Sinh học, Tiếng Anh"
+	},
+	{
+		"id": "D09",
+		"label": "D09 - Toán, Lịch sử, Tiếng Anh"
+	},
+	{
+		"id": "D10",
+		"label": "D10 - Toán, Địa lí, Tiếng Anh"
+	},
+	{
+		"id": "D11",
+		"label": "D11 - Ngữ văn, Vật lí, Tiếng Anh"
+	},
+	{
+		"id": "D12",
+		"label": "D12 - Ngữ văn, Hóa học, Tiếng Anh"
+	},
+	{
+		"id": "D13",
+		"label": "D13 - Ngữ văn, Sinh học, Tiếng Anh"
+	},
+	{
+		"id": "D14",
+		"label": "D14 - Ngữ văn, Lịch sử, Tiếng Anh"
+	},
+	{
+		"id": "D15",
+		"label": "D15 - Ngữ văn, Địa lí, Tiếng Anh"
+	},
+	{
+		"id": "D16",
+		"label": "D16 - Toán, Địa lí, Tiếng Đức"
+	},
+	{
+		"id": "D17",
+		"label": "D17 - Toán, Địa lí, Tiếng Nga"
+	},
+	{
+		"id": "D18",
+		"label": "D18 - Toán, Địa lí, Tiếng Nhật"
+	},
+	{
+		"id": "D19",
+		"label": "D19 - Toán, Địa lí, Tiếng Pháp"
+	},
+	{
+		"id": "D20",
+		"label": "D20 - Toán, Địa lí, Tiếng Trung"
+	},
+	{
+		"id": "D21",
+		"label": "D21 - Toán, Hóa học, Tiếng Đức"
+	},
+	{
+		"id": "D22",
+		"label": "D22 - Toán, Hóa học, Tiếng Nga"
+	},
+	{
+		"id": "D23",
+		"label": "D23 - Toán, Hóa học, Tiếng Nhật"
+	},
+	{
+		"id": "D24",
+		"label": "D24 - Toán, Hóa học, Tiếng Pháp"
+	},
+	{
+		"id": "D25",
+		"label": "D25 - Toán, Hóa học, Tiếng Trung"
+	},
+	{
+		"id": "D26",
+		"label": "D26 - Toán, Vật lí, Tiếng Đức"
+	},
+	{
+		"id": "D27",
+		"label": "D27 - Toán, Vật lí, Tiếng Nga"
+	},
+	{
+		"id": "D28",
+		"label": "D28 - Toán, Vật lí, Tiếng Nhật"
+	},
+	{
+		"id": "D29",
+		"label": "D29 - Toán, Vật lí, Tiếng Pháp"
+	},
+	{
+		"id": "D30",
+		"label": "D30 - Toán, Vật lí, Tiếng Trung"
+	},
+	{
+		"id": "D31",
+		"label": "D31 - Toán, Sinh học, Tiếng Đức"
+	},
+	{
+		"id": "D32",
+		"label": "D32 - Toán, Sinh học, Tiếng Nga"
+	},
+	{
+		"id": "D33",
+		"label": "D33 - Toán, Sinh học, Tiếng Nhật"
+	},
+	{
+		"id": "D34",
+		"label": "D34 - Toán, Sinh học, Tiếng Pháp"
+	},
+	{
+		"id": "D35",
+		"label": "D35 - Toán, Sinh học, Tiếng Trung"
+	},
+	{
+		"id": "D41",
+		"label": "D41 - Ngữ văn, Địa lí, Tiếng Đức"
+	},
+	{
+		"id": "D42",
+		"label": "D42 - Ngữ văn, Địa lí, Tiếng Nga"
+	},
+	{
+		"id": "D43",
+		"label": "D43 - Ngữ văn, Địa lí, Tiếng Nhật"
+	},
+	{
+		"id": "D44",
+		"label": "D44 - Ngữ văn, Địa lí, Tiếng Pháp"
+	},
+	{
+		"id": "D45",
+		"label": "D45 - Ngữ văn, Địa lí, Tiếng Trung"
+	},
+	{
+		"id": "D52",
+		"label": "D52 - Ngữ văn, Vật lí, Tiếng Nga"
+	},
+	{
+		"id": "D54",
+		"label": "D54 - Ngữ văn, Vật lí, Tiếng Pháp"
+	},
+	{
+		"id": "D55",
+		"label": "D55 - Ngữ văn, Vật lí, Tiếng Trung"
+	},
+	{
+		"id": "D61",
+		"label": "D61 - Ngữ văn, Lịch sử, Tiếng Đức"
+	},
+	{
+		"id": "D62",
+		"label": "D62 - Ngữ văn, Lịch sử, Tiếng Nga"
+	},
+	{
+		"id": "D63",
+		"label": "D63 - Ngữ văn, Lịch sử, Tiếng Nhật"
+	},
+	{
+		"id": "D64",
+		"label": "D64 - Ngữ văn, Lịch sử, Tiếng Pháp"
+	},
+	{
+		"id": "D65",
+		"label": "D65 - Ngữ văn, Lịch sử, Tiếng Trung"
+	},
+	{
+		"id": "D66",
+		"label": "D66 - Ngữ văn, Giáo dục công dân, Tiếng Anh"
+	},
+	{
+		"id": "D68",
+		"label": "D68 - Ngữ văn, Giáo dục công dân, Tiếng Nga"
+	},
+	{
+		"id": "D67",
+		"label": "D67 - Ngữ văn, Giáo dục công dân, Tiếng Đức"
+	},
+	{
+		"id": "D69",
+		"label": "D69 - Ngữ Văn, Giáo dục công dân, Tiếng Nhật"
+	},
+	{
+		"id": "D70",
+		"label": "D70 - Ngữ Văn, Giáo dục công dân, Tiếng Pháp"
+	},
+	{
+		"id": "D71",
+		"label": "D71 - Ngữ văn, Giáo dục công dân, Tiếng Trung"
+	},
+	{
+		"id": "D72",
+		"label": "D72 - Ngữ văn, Khoa học tự nhiên, Tiếng Anh"
+	},
+	{
+		"id": "D73",
+		"label": "D73 - Ngữ văn, Khoa học tự nhiên, Tiếng Đức"
+	},
+	{
+		"id": "D74",
+		"label": "D74 - Ngữ văn, Khoa học tự nhiên, Tiếng Nga"
+	},
+	{
+		"id": "D75",
+		"label": "D75 - Ngữ văn, Khoa học tự nhiên, Tiếng Nhật"
+	},
+	{
+		"id": "D76",
+		"label": "D76 - Ngữ văn, Khoa học tự nhiên, Tiếng Pháp"
+	},
+	{
+		"id": "D77",
+		"label": "D77 - Ngữ văn, Khoa học tự nhiên, Tiếng Trung"
+	},
+	{
+		"id": "D78",
+		"label": "D78 - Ngữ văn, Khoa học xã hội, Tiếng Anh"
+	},
+	{
+		"id": "D79",
+		"label": "D79 - Ngữ văn, Khoa học xã hội, Tiếng Đức"
+	},
+	{
+		"id": "D80",
+		"label": "D80 - Ngữ văn, Khoa học xã hội, Tiếng Nga"
+	},
+	{
+		"id": "D81",
+		"label": "D81 - Ngữ văn, Khoa học xã hội, Tiếng Nhật"
+	},
+	{
+		"id": "D82",
+		"label": "D82 - Ngữ văn, Khoa học xã hội, Tiếng Pháp"
+	},
+	{
+		"id": "D83",
+		"label": "D83 - Ngữ văn, Khoa học xã hội, Tiếng Trung"
+	},
+	{
+		"id": "D84",
+		"label": "D84 - Toán, Giáo dục công dân, Tiếng Anh"
+	},
+	{
+		"id": "D85",
+		"label": "D85 - Toán, Giáo dục công dân, Tiếng Đức"
+	},
+	{
+		"id": "D86",
+		"label": "D86 - Toán, Giáo dục công dân, Tiếng Nga"
+	},
+	{
+		"id": "D87",
+		"label": "D87 - Toán, Giáo dục công dân, Tiếng Pháp"
+	},
+	{
+		"id": "D88",
+		"label": "D88 - Toán, Giáo dục công dân, Tiếng Nhật"
+	},
+	{
+		"id": "D90",
+		"label": "D90 - Toán, Khoa học tự nhiên, Tiếng Anh"
+	},
+	{
+		"id": "D91",
+		"label": "D91 - Toán, Khoa học tự nhiên, Tiếng Pháp"
+	},
+	{
+		"id": "D92",
+		"label": "D92 - Toán, Khoa học tự nhiên, Tiếng Đức"
+	},
+	{
+		"id": "D93",
+		"label": "D93 - Toán, Khoa học tự nhiên, Tiếng Nga"
+	},
+	{
+		"id": "D94",
+		"label": "D94 - Toán, Khoa học tự nhiên, Tiếng Nhật"
+	},
+	{
+		"id": "D95",
+		"label": "D95 - Toán, Khoa học tự nhiên, Tiếng Trung"
+	},
+	{
+		"id": "D96",
+		"label": "D96 - Toán, Khoa học xã hội, Anh"
+	},
+	{
+		"id": "D97",
+		"label": "D97 - Toán, Khoa học xã hội, Tiếng Pháp"
+	},
+	{
+		"id": "H00",
+		"label": "H00 - Ngữ văn, Năng khiếu vẽ Nghệ thuật 1, Năng khiếu vẽ Nghệ thuật 2"
+	},
+	{
+		"id": "H01",
+		"label": "H01 - Toán, Ngữ văn, Vẽ Mỹ thuật"
+	},
+	{
+		"id": "H02",
+		"label": "H02 - Toán, Vẽ Hình họa mỹ thuật, Vẽ trang trí màu"
+	},
+	{
+		"id": "H03",
+		"label": "H03 - Toán, Khoa học tự nhiên, Vẽ Năng khiếu"
+	},
+	{
+		"id": "H04",
+		"label": "H04 - Toán, Tiếng Anh, Vẽ Năng khiếu"
+	},
+	{
+		"id": "H05",
+		"label": "H05 - Ngữ văn, Khoa học xã hội, Vẽ Năng khiếu"
+	},
+	{
+		"id": "H06",
+		"label": "H06 - Ngữ văn, Tiếng Anh,Vẽ mỹ thuật"
+	},
+	{
+		"id": "H07",
+		"label": "H07 - Toán, Hình họa, Trang trí"
+	},
+	{
+		"id": "H08",
+		"label": "H08 - Ngữ văn, Lịch sử, Vẽ mỹ thuật"
+	},
+	{
+		"id": "K01",
+		"label": "K01 - Toán, Tiếng Anh, Tin học"
+	},
+	{
+		"id": "M00",
+		"label": "M00 - Ngữ văn, Toán, Đọc diễn cảm, Hát"
+	},
+	{
+		"id": "M01",
+		"label": "M01 - Ngữ văn, Lịch sử, Năng khiếu"
+	},
+	{
+		"id": "M02",
+		"label": "M02 - Toán, Năng khiếu 1, Năng khiếu 2"
+	},
+	{
+		"id": "M03",
+		"label": "M03 - Văn, Năng khiếu 1, Năng khiếu 2"
+	},
+	{
+		"id": "M04",
+		"label": "M04 - Toán, Đọc kể diễn cảm, Hát - Múa"
+	},
+	{
+		"id": "M09",
+		"label": "M09 - Toán, NK Mầm non 1( kể chuyện, đọc, diễn cảm), NK Mầm non 2 (Hát)"
+	},
+	{
+		"id": "M10",
+		"label": "M10 - "
+	},
+	{
+		"id": "M11",
+		"label": "M11 - Ngữ Văn, năng kiếu báo chí, Tiếng Anh"
+	},
+	{
+		"id": "M12",
+		"label": "M12 - Ngữ Văn, năng kiếu báo chí, Vật Lý"
+	},
+	{
+		"id": "M13",
+		"label": "M13 - "
+	},
+	{
+		"id": "M14",
+		"label": "M14 - Ngữ văn, Năng khiếu báo chí, Toán"
+	},
+	{
+		"id": "M15",
+		"label": "M15 - Ngữ văn, Năng khiếu báo chí, Tiếng Anh"
+	},
+	{
+		"id": "M16",
+		"label": "M16 - Ngữ văn, Năng khiếu báo chí, Vật lý"
+	},
+	{
+		"id": "M17",
+		"label": "M17 - Ngữ văn, Năng khiếu báo chí, Lịch sử"
+	},
+	{
+		"id": "M18",
+		"label": "M18 - Ngữ văn, Năng khiếu Ảnh báo chí, Toán"
+	},
+	{
+		"id": "M19",
+		"label": "M19 - Ngữ văn, Năng khiếu Ảnh báo chí, Tiếng Anh"
+	},
+	{
+		"id": "M20",
+		"label": "M20 - Ngữ văn, Năng khiếu Ảnh báo chí, Vật lý"
+	},
+	{
+		"id": "M21",
+		"label": "M21 - Ngữ văn, Năng khiếu Ảnh báo chí, Lịch sử"
+	},
+	{
+		"id": "M22",
+		"label": "M22 - Ngữ văn, Năng khiếu quay phim truyền hình, Toán"
+	},
+	{
+		"id": "M23",
+		"label": "M23 - Ngữ văn, Năng khiếu quay phim truyền hình, Tiếng Anh"
+	},
+	{
+		"id": "M24",
+		"label": "M24 - Ngữ văn, Năng khiếu quay phim truyền hình, Vật lý"
+	},
+	{
+		"id": "M25",
+		"label": "M25 - Ngữ văn, Năng khiếu quay phim truyền hình, Lịch sử"
+	},
+	{
+		"id": "N00",
+		"label": "N00 - Ngữ văn, Năng khiếu Âm nhạc 1, Năng khiếu Âm nhạc 2"
+	},
+	{
+		"id": "N01",
+		"label": "N01 - Ngữ văn, xướng âm, biểu diễn nghệ thuật"
+	},
+	{
+		"id": "N02",
+		"label": "N02 - Ngữ văn, Ký xướng âm, Hát hoặc biểu diễn nhạc cụ"
+	},
+	{
+		"id": "N03",
+		"label": "N03 - Ngữ văn, Ghi âm- xướng âm, chuyên môn"
+	},
+	{
+		"id": "N04",
+		"label": "N04 - Ngữ Văn, Năng khiếu thuyết trình, Năng khiếu"
+	},
+	{
+		"id": "N05",
+		"label": "N05 - Ngữ Văn, Xây dựng kịch bản sự kiện, Năng khiếu"
+	},
+	{
+		"id": "N06",
+		"label": "N06 - Ngữ văn, Ghi âm- xướng âm, chuyên môn"
+	},
+	{
+		"id": "N07",
+		"label": "N07 - Ngữ văn, Ghi âm- xướng âm, chuyên môn"
+	},
+	{
+		"id": "N08",
+		"label": "N08 - Ngữ văn , Hòa thanh, Phát triển chủ đề và phổ thơ"
+	},
+	{
+		"id": "N09",
+		"label": "N09 - Ngữ văn, Hòa thanh, Bốc thăm đề- chỉ huy tại chỗ"
+	},
+	{
+		"id": "R00",
+		"label": "R00 - Ngữ văn, Lịch sử, Năng khiếu báo chí"
+	},
+	{
+		"id": "R01",
+		"label": "R01 - Ngữ văn, Địa lý, Năng khiếu Biểu diễn nghệ thuật"
+	},
+	{
+		"id": "R02",
+		"label": "R02 - Ngữ văn, Toán, Năng khiếu Biểu diễn nghệ thuật"
+	},
+	{
+		"id": "R03",
+		"label": "R03 - Ngữ văn, tiếng Anh, Năng khiếu Biểu diễn nghệ thuật"
+	},
+	{
+		"id": "R04",
+		"label": "R04 - Ngữ văn, Năng khiếu Biểu diễn nghệ thuật, Năng khiếu Kiến thức văn hóa – xã hội – nghệ thuật"
+	},
+	{
+		"id": "R05",
+		"label": "R05 - Ngữ văn, tiếng Anh, Năng khiếu kiến thức truyền thông"
+	},
+	{
+		"id": "S00",
+		"label": "S00 - Ngữ văn, Năng khiếu SKĐA 1, Năng khiếu SKĐA 2"
+	},
+	{
+		"id": "S01",
+		"label": "S01 - Toán, Năng khiếu 1, Năng khiếu 2"
+	},
+	{
+		"id": "T00",
+		"label": "T00 - Toán, Sinh học, Năng khiếu TDTT"
+	},
+	{
+		"id": "T01",
+		"label": "T01 - Toán, Ngữ văn, Năng khiếu TDTT"
+	},
+	{
+		"id": "T02",
+		"label": "T02 - Ngữ văn, Sinh, Năng khiếu TDTT"
+	},
+	{
+		"id": "T03",
+		"label": "T03 - Ngữ văn, Địa, Năng khiếu TDTT"
+	},
+	{
+		"id": "T04",
+		"label": "T04 - Toán, Lý, Năng khiếu TDTT"
+	},
+	{
+		"id": "T05",
+		"label": "T05 - "
+	},
+	{
+		"id": "V00",
+		"label": "V00 - Toán, Vật lí, Vẽ Hình họa mỹ thuật"
+	},
+	{
+		"id": "V01",
+		"label": "V01 - Toán, Ngữ văn, Vẽ Hình họa mỹ thuật"
+	},
+	{
+		"id": "V02",
+		"label": "V02 - VẼ MT, Toán, Tiếng Anh"
+	},
+	{
+		"id": "V03",
+		"label": "V03 - VẼ MT, Toán, Hóa"
+	},
+	{
+		"id": "V05",
+		"label": "V05 - "
+	},
+	{
+		"id": "V06",
+		"label": "V06 - "
+	},
+	{
+		"id": "V07",
+		"label": "V07 - "
+	},
+	{
+		"id": "V08",
+		"label": "V08 - "
+	},
+	{
+		"id": "V09",
+		"label": "V09 - "
+	},
+	{
+		"id": "V10",
+		"label": "V10 - "
+	},
+	{
+		"id": "V11",
+		"label": "V11 - "
+	}
+]

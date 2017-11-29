@@ -1,0 +1,138 @@
+[
+	{
+		"id": "1",
+		"label": "Kế toán - Kiểm toán"
+	},
+	{
+		"id": "2",
+		"label": "Tài chính - Ngân hàng- Bảo hiểm"
+	},
+	{
+		"id": "3",
+		"label": "Kinh tế - Quản trị kinh doanh - Thương Mại"
+	},
+	{
+		"id": "4",
+		"label": "Ngoại thương - Xuất nhập khẩu - KTế quốc tế"
+	},
+	{
+		"id": "5",
+		"label": "Ngoại giao - Ngoại ngữ"
+	},
+	{
+		"id": "6",
+		"label": "Báo chí - Marketing - Quảng cáo - PR"
+	},
+	{
+		"id": "7",
+		"label": "Công nghệ thông tin - Tin học"
+	},
+	{
+		"id": "8",
+		"label": "Thiết kế đồ họa - Game - Đa phương tiện"
+	},
+	{
+		"id": "9",
+		"label": "Công an - Quân đội"
+	},
+	{
+		"id": "10",
+		"label": "Luật - Tòa án"
+	},
+	{
+		"id": "11",
+		"label": "Xây dựng - Kiến trúc-Giao thông"
+	},
+	{
+		"id": "12",
+		"label": "Mỹ thuật - Âm nhạc-Nghệ thuật"
+	},
+	{
+		"id": "13",
+		"label": "Thể dục - Thể thao"
+	},
+	{
+		"id": "14",
+		"label": "Du lịch-Khách sạn"
+	},
+	{
+		"id": "15",
+		"label": "Văn hóa - Chính trị - Khoa học Xã hội"
+	},
+	{
+		"id": "16",
+		"label": "Nhân sự - Hành chính"
+	},
+	{
+		"id": "17",
+		"label": "Tâm lý"
+	},
+	{
+		"id": "18",
+		"label": "Sư phạm - Giáo dục"
+	},
+	{
+		"id": "19",
+		"label": "Mỏ - Địa chất"
+	},
+	{
+		"id": "20",
+		"label": "Tài nguyên- Môi trường"
+	},
+	{
+		"id": "21",
+		"label": "Thủy sản-Lâm Nghiệp-Nông nghiệp"
+	},
+	{
+		"id": "22",
+		"label": "Hàng hải-Thủy lợi-Thời tiết"
+	},
+	{
+		"id": "23",
+		"label": "Y - Dược"
+	},
+	{
+		"id": "24",
+		"label": "Bác sĩ thú y"
+	},
+	{
+		"id": "25",
+		"label": "Ô tô - Cơ khí -Chế tạo"
+	},
+	{
+		"id": "26",
+		"label": "Điện lạnh- Điện tử - Điện - Tự động hóa"
+	},
+	{
+		"id": "27",
+		"label": "Công nghệ In - Giấy"
+	},
+	{
+		"id": "28",
+		"label": "Công nghệ chế biến thực phẩm"
+	},
+	{
+		"id": "29",
+		"label": "Công nghệ sinh - Hóa"
+	},
+	{
+		"id": "30",
+		"label": "Thời trang- May mặc"
+	},
+	{
+		"id": "31",
+		"label": "Công nghệ vật liệu"
+	},
+	{
+		"id": "32",
+		"label": "Hàng không - Vũ trụ- Hạt nhân"
+	},
+	{
+		"id": "33",
+		"label": "Toán học và thống kê"
+	},
+	{
+		"id": "34",
+		"label": "Khoa học tư nhiên khác"
+	}
+]
