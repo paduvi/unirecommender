@@ -32,7 +32,7 @@ const preprocess_data = () => {
 const createWindow = () => {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 500, height: 540,
+        width: 700, height: 700,
         resizable: false,
         show: false,
         // frame: false,
@@ -71,8 +71,8 @@ const createWindow = () => {
 
 const createLoadingScreen = () => {
     loadingScreen = new BrowserWindow({
-        width: 500,
-        height: 500,
+        width: 700,
+        height: 700,
         resizable: false,
         show: false,
         frame: false,

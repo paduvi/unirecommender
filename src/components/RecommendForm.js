@@ -47,9 +47,10 @@ class RecommendForm extends React.Component {
         return (
             <div>
                 <Avatar shape="square"
-                        style={{margin: '15px 0 5px 0', transform: 'scale(1.3)'}}
+                        style={{margin: '40px 0 30px 0', transform: 'scale(1.6)'}}
+                        size="large"
                         src={process.env.PUBLIC_URL + '/loadscreen.png'}/>
-                <div style={{padding: 20, marginTop: 10, background: '#fff'}}>
+                <div style={{padding: 24, margin: '16px 0', background: '#fff'}}>
                     <Form onSubmit={this.handleSubmit}>
                         <FormItem
                             {...formItemLayout}
