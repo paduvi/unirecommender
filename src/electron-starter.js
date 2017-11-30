@@ -12,16 +12,20 @@ const url = require('url')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow, loadingScreen;
-let store = {};
+const Store = require('electron-store');
+const store = new Store();
 
 const list_university = require('./data/university');
-const list_major = require('../dev/nganhtruong');
+const list_branch = require('./data/branch');
+const list_block = require('./data/block');
 
 const preprocess_data = () => {
-    Object.assign(store, ...list_university.map(university => ({
-        [university.id]: university
-    })));
-    console.log(store);
+    store.set('list_branch', list_branch);
+    store.set('list_block', list_block);
+    // Object.assign(store, ...list_university.map(university => ({
+    //     [university.id]: university
+    // })));
+    // console.log(store);
 }
 
 const createWindow = () => {
