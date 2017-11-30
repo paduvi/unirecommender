@@ -8,6 +8,7 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
+const {ipcMain} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -115,3 +116,23 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+ipcMain.on('recommend', (event, param) => {
+    const data = [{
+        key: '1',
+        id: 'BKA',
+        name: 'Đại Học Bách Khoa Hà Nội',
+        count: 3
+    }, {
+        key: '2',
+        id: 'QHI',
+        name: 'Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội',
+        count: 2
+    }, {
+        key: '3',
+        id: 'KHA',
+        name: 'Đại Học Kinh Tế Quốc Dân',
+        count: 4
+    }];
+
+    event.sender.send('recommend-response', data);
+})
