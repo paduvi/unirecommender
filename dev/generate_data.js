@@ -44,8 +44,13 @@ const get_list_university_major_in_branch = async (branch, university) => {
         return i > 1 && $(el).children('th').length == 0;
     }).map((i, el) => {
         el = $(el);
+        let blocks = el.find('td:nth-child(3)').text().split("; ");
+        if (blocks.length == 0) {
+            blocks = ["A00"];
+        }
         const major = {
             'ma_nganh': el.find('td:nth-child(2)').text(),
+            'khoi_thi': blocks,
             'ten_nganh': el.find('td:nth-child(3)').text(),
             'diem_chuan': el.find('td:nth-child(5)').text(),
             'ghi_chu': el.find('td:nth-child(6)').text()
