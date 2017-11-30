@@ -44,7 +44,7 @@ const get_list_university_major_in_branch = async (branch, university) => {
         return i > 1 && $(el).children('th').length == 0;
     }).map((i, el) => {
         el = $(el);
-        let blocks = el.find('td:nth-child(3)').text().split("; ");
+        let blocks = el.find('td:nth-child(4)').text().split("; ");
         if (blocks.length == 0) {
             blocks = ["A00"];
         }
