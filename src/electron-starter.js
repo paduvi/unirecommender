@@ -15,7 +15,7 @@ let mainWindow, loadingScreen;
 let store = {};
 
 const list_university = require('./data/university');
-const list_major = require('./data/nganhtruong');
+const list_major = require('../dev/nganhtruong');
 
 const preprocess_data = () => {
     Object.assign(store, ...list_university.map(university => ({
