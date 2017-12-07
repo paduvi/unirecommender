@@ -91,11 +91,11 @@ const get_list_university_major_in_branch = async (branch, university) => {
         const list_chi_tieu = require('./diemchuan');
         Object.keys(major_data).forEach(university_id => {
             const temp = list_chi_tieu.filter(u => u["maTruong"] == university_id)[0];
-            let chi_tieu;
+            let chi_tieu_truong;
             if (!temp) {
-                chi_tieu = getRandomInt(300, 1500);
+                chi_tieu_truong = getRandomInt(300, 1500);
             } else {
-                chi_tieu = u["diemChuan"];
+                chi_tieu_truong = u["diemChuan"];
             }
             const portions = major_data[university_id].map(major => major["diem_chuan"]);
             const diem_san = math.min(portions);
@@ -103,8 +103,8 @@ const get_list_university_major_in_branch = async (branch, university) => {
             const sum_portion = portions.reduce((sum, portion) => sum + Math.exp(portion), 0);
             const majors = major_data[university_id].map(major => {
                 const portion = Math.exp(major["diem_chuan"]) / sum_portion;
-                const temp_chi_tieu = chi_tieu * portion;
-                return Object.assign({}, major, {chi_tieu: temp_chi_tieu, diem_san});
+                const temp_chi_tieu = chi_tieu_truong * portion;
+                return Object.assign({}, major, {chi_tieu_nganh: temp_chi_tieu, chi_tieu_truong, diem_san});
             });
             major_data[university_id] = majors;
         });

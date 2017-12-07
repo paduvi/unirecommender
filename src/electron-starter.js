@@ -16,13 +16,22 @@ let mainWindow, loadingScreen;
 const Store = require('electron-store');
 const store = new Store();
 
-const list_university = require('./data/university');
-const list_branch = require('./data/branch');
-const list_block = require('./data/block');
+// const list_university = require('./data/university');
+let list_branch, list_block;
 
 const preprocess_data = () => {
-    store.set('list_branch', list_branch);
-    store.set('list_block', list_block);
+    list_branch = store.get('list_branch');
+    if (!list_branch) {
+        list_branch = require('./data/branch');
+        store.set('list_branch', list_branch);
+    }
+
+    list_block = store.get('list_block');
+    if (!list_block) {
+        list_block = require('./data/block');
+        store.set('list_block', list_block);
+    }
+
     // Object.assign(store, ...list_university.map(university => ({
     //     [university.id]: university
     // })));
