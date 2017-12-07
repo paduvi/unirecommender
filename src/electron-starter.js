@@ -21,6 +21,8 @@ const store = new Store();
 let list_branch, list_block, list_major, list_university;
 
 const preprocess_data = () => {
+    store.clear();
+
     list_branch = store.get('list_branch');
     if (!list_branch) {
         list_branch = require('./data/branch');
@@ -53,10 +55,10 @@ const range = (start, end) => {
 const createWindow = () => {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 700, height: 700,
-        resizable: false,
+        width: 500, height: 500,
+        // resizable: false,
         show: false,
-        // frame: false,
+        frame: false,
         icon: path.join(__dirname, '/../public/icon/png/logo.png')
     })
 
@@ -69,10 +71,11 @@ const createWindow = () => {
     mainWindow.loadURL(startUrl);
 
     mainWindow.webContents.on('did-finish-load', () => {
+        mainWindow.setFullScreen(true);
         mainWindow.show();
 
         if (loadingScreen) {
-            let loadingScreenBounds = loadingScreen.getBounds();
+            const loadingScreenBounds = loadingScreen.getBounds();
             mainWindow.setBounds(loadingScreenBounds);
             loadingScreen.close();
         }
@@ -92,8 +95,8 @@ const createWindow = () => {
 
 const createLoadingScreen = () => {
     loadingScreen = new BrowserWindow({
-        width: 700,
-        height: 700,
+        width: 500,
+        height: 500,
         resizable: false,
         show: false,
         frame: false,
@@ -133,6 +136,10 @@ app.on('activate', () => {
     if (mainWindow === null) {
         createWindow()
     }
+});
+
+ipcMain.on('exit', () => {
+    mainWindow.close();
 })
 
 // In this file you can include the rest of your app's specific main process

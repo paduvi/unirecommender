@@ -4,7 +4,6 @@ import {Form, Avatar, Select, InputNumber, Button} from 'antd';
 const Store = window.require('electron-store');
 const store = new Store();
 
-const FormItem = Form.Item;
 const Option = Select.Option;
 
 
@@ -50,9 +49,9 @@ class RecommendForm extends React.Component {
                         style={{margin: '40px 0 30px 0', transform: 'scale(1.6)'}}
                         size="large"
                         src={process.env.PUBLIC_URL + '/loadscreen.png'}/>
-                <div style={{padding: 24, margin: '16px 0', background: '#fff'}}>
+                <div style={{padding: 36, margin: '16px 0', background: '#fff'}}>
                     <Form onSubmit={this.handleSubmit}>
-                        <FormItem
+                        <Form.Item
                             {...formItemLayout}
                             label="Chọn nhóm ngành"
                             hasFeedback
@@ -72,8 +71,8 @@ class RecommendForm extends React.Component {
                                     ))}
                                 </Select>
                             )}
-                        </FormItem>
-                        <FormItem
+                        </Form.Item>
+                        <Form.Item
                             {...formItemLayout}
                             label="Nhập tổng điểm của bạn:"
                             hasFeedback
@@ -86,32 +85,35 @@ class RecommendForm extends React.Component {
                             })(
                                 <InputNumber placeholder="Nhập tổng điểm của bạn" style={{width: '100%'}} min={0}/>
                             )}
-                        </FormItem>
-                        <FormItem
+                        </Form.Item>
+                        <Form.Item
                             {...formItemLayout}
                             label="Khối thi"
+                            hasFeedback
                         >
-                            {getFieldDecorator('block', {initialValue: 'all'})(
+                            {getFieldDecorator('block', {
+                                rules: [{required: true, message: 'Bạn hãy chọn khối thi!'}]
+                            })(
                                 <Select
                                     showSearch
+                                    placeholder="--Khối thi--"
                                     optionFilterProp="children"
                                     notFoundContent="Không tìm thấy"
                                     filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
                                 >
-                                    <Option value='all'>--Khối thi--</Option>
                                     {store.get('list_block').map(({id, label}) => (
                                         <Option value={id}>{label}</Option>
                                     ))}
                                 </Select>
                             )}
-                        </FormItem>
-                        <FormItem
+                        </Form.Item>
+                        <Form.Item
                             {...tailFormItemLayout}
-                            style={{textAlign: 'center'}}
+                            style={{textAlign: 'center', paddingTop: 30}}
                         >
                             <Button type="primary" size="default" icon="search" htmlType="submit">Tìm
                                 trường</Button>
-                        </FormItem>
+                        </Form.Item>
                     </Form>
                 </div>
             </div>

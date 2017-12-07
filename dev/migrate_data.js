@@ -1,17 +1,9 @@
-const universities = require('./university');
-const extra = require('./diemchuan');
+const majors = require('../src/data/major');
 const fs = require('fs-extra');
 
-const output = universities.map(university => {
-    const temp = extra.filter(u => u["maTruong"] == university.id)[0];
-    if (!temp) {
-        console.log(university.label);
-    }
+const output = majors.map(major => Object.assign({}, major, {chi_tieu: major.chi_tieu_truong}));
 
-    return Object.assign({}, university, {chi_tieu: temp.diemChuan});
-});
-
-fs.writeJson('../src/data/university.json', output, {spaces: '\t'}).then(() => process.exit(0)).catch(err => {
+fs.writeJson('../src/data/major.json', output, {spaces: '\t'}).then(() => process.exit(0)).catch(err => {
     console.log(err);
     process.exit(1);
 })

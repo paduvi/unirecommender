@@ -94,23 +94,16 @@ const get_list_university_major_in_branch = async (branch, university) => {
             .then(() => list_university.reduce((p2, university) => p2
                 .then(() => fn(branch.id, university.id)), Promise.resolve())), Promise.resolve());
 
-        const list_chi_tieu = require('./diemchuan');
         let list_major = []
         Object.keys(major_data).forEach(university_id => {
-            const temp = list_chi_tieu.filter(u => u["maTruong"] == university_id)[0];
-            let chi_tieu_truong;
-            if (!temp) {
-                chi_tieu_truong = getRandomInt(300, 1500);
-            } else {
-                chi_tieu_truong = temp["diemChuan"];
-            }
+            const chi_tieu_truong = getRandomInt(600, 1500);
             const portions = major_data[university_id].map(major => major["diem_chuan"]);
             const diem_san = math.min(portions);
 
             const sum_portion = portions.reduce((sum, portion) => sum + Math.exp(portion), 0);
             const majors = major_data[university_id].map(major => {
                 const portion = Math.exp(major["diem_chuan"]) / sum_portion;
-                const temp_chi_tieu = chi_tieu_truong * portion;
+                const temp_chi_tieu = Math.floor(chi_tieu_truong * portion);
                 return Object.assign({}, major, {
                     chi_tieu_nganh: temp_chi_tieu,
                     chi_tieu_truong,
