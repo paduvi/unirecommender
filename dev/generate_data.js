@@ -100,9 +100,9 @@ const get_list_university_major_in_branch = async (branch, university) => {
             const portions = major_data[university_id].map(major => major["diem_chuan"]);
             const diem_san = math.min(portions);
 
-            const sum_portion = portions.reduce((sum, portion) => sum + Math.exp(portion), 0);
+            const sum_portion = portions.reduce((sum, portion) => sum + portion, 0);
             const majors = major_data[university_id].map(major => {
-                const portion = Math.exp(major["diem_chuan"]) / sum_portion;
+                const portion = major["diem_chuan"] / sum_portion;
                 const temp_chi_tieu = Math.floor(chi_tieu_truong * portion);
                 return Object.assign({}, major, {
                     chi_tieu_nganh: temp_chi_tieu,
