@@ -17,7 +17,7 @@ const Store = require('electron-store');
 const store = new Store();
 
 // const list_university = require('./data/university');
-let list_branch, list_block;
+let list_branch, list_block, list_major;
 
 const preprocess_data = () => {
     list_branch = store.get('list_branch');
@@ -30,6 +30,13 @@ const preprocess_data = () => {
     if (!list_block) {
         list_block = require('./data/block');
         store.set('list_block', list_block);
+    }
+
+    list_major = store.get('list_major');
+    if (!list_major) {
+        list_major = {
+
+        }
     }
 
     // Object.assign(store, ...list_university.map(university => ({
@@ -126,6 +133,7 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 ipcMain.on('recommend', (event, param) => {
+    const diem_thi
     const data = [{
         key: '1',
         id: 'BKA',

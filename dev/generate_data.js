@@ -89,6 +89,7 @@ const get_list_university_major_in_branch = async (branch, university) => {
                 .then(() => fn(branch.id, university.id)), Promise.resolve())), Promise.resolve());
 
         const list_chi_tieu = require('./diemchuan');
+        let list_major = []
         Object.keys(major_data).forEach(university_id => {
             const temp = list_chi_tieu.filter(u => u["maTruong"] == university_id)[0];
             let chi_tieu_truong;
@@ -104,12 +105,17 @@ const get_list_university_major_in_branch = async (branch, university) => {
             const majors = major_data[university_id].map(major => {
                 const portion = Math.exp(major["diem_chuan"]) / sum_portion;
                 const temp_chi_tieu = chi_tieu_truong * portion;
-                return Object.assign({}, major, {chi_tieu_nganh: temp_chi_tieu, chi_tieu_truong, diem_san});
+                return Object.assign({}, major, {
+                    chi_tieu_nganh: temp_chi_tieu,
+                    chi_tieu_truong,
+                    diem_san,
+                    ma_truong: university_id
+                });
             });
-            major_data[university_id] = majors;
+            list_major.concat(majors)
         });
         console.log('write to file');
-        await fs.writeJson('../src/data/major.json', major_data, {spaces: '\t'});
+        await fs.writeJson('../src/data/major.json', list_major, {spaces: '\t'});
         console.log('Done');
         process.exit(0);
     } catch (err) {
