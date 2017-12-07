@@ -145,9 +145,7 @@ ipcMain.on('recommend', (event, param) => {
         const x3 = (param.branch == major.branch) ? 1 : 0;
         const x4 = (major.khoi_thi.indexOf(param.block) == -1) ? 0 : 1;
 
-        const vector = [0.15 * x1, 0.05 * x2, 0.3 * x3, 0.5 * x4];
-
-        return vector;
+        return [0.18 * x1, 0.02 * x2, 0.3 * x3, 0.5 * x4];
     });
 
     const sum_vector = vector => vector.reduce((sum, x) => sum + x, 0);
