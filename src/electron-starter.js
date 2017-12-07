@@ -18,7 +18,7 @@ const Store = require('electron-store');
 const store = new Store();
 
 // const list_university = require('./data/university');
-let list_branch, list_block, list_major;
+let list_branch, list_block, list_major, list_university;
 
 const preprocess_data = () => {
     list_branch = store.get('list_branch');
@@ -39,10 +39,11 @@ const preprocess_data = () => {
         store.set('list_major', list_major);
     }
 
-    // Object.assign(store, ...list_university.map(university => ({
-    //     [university.id]: university
-    // })));
-    // console.log(store);
+    list_university = store.get('list_university');
+    if (!list_major) {
+        list_major = require('./data/university');
+        store.set('list_university', list_university);
+    }
 }
 
 const range = (start, end) => {
@@ -157,37 +158,10 @@ ipcMain.on('recommend', (event, param) => {
     let indices = range(0, list_major.length - 1);
     indices.sort((a, b) => s_star[a] - s_star[b]);
 
-    let result = {}
+    const result = indices.map((major_index, sort_index) => Object.assign({}, list_major[major_index], {
+        key: sort_index + 1,
+        ten_truong: list_university[list_major[major_index].ma_truong]
+    }));
 
-    indices.forEach(index => {
-        const major = list_major[index];
-        const university_id = major.ma_truong;
-        let university;
-        if (result.hasOwnProperty(university_id)) {
-            university = result[university_id];
-        } else {
-            university = {
-                id: university_id,
-            }
-        }
-    })
-
-    const data = [{
-        key: '1',
-        id: 'BKA',
-        name: 'Đại Học Bách Khoa Hà Nội',
-        count: 3
-    }, {
-        key: '2',
-        id: 'QHI',
-        name: 'Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội',
-        count: 2
-    }, {
-        key: '3',
-        id: 'KHA',
-        name: 'Đại Học Kinh Tế Quốc Dân',
-        count: 4
-    }];
-
-    event.sender.send('recommend-response', data);
+    event.sender.send('recommend-response', result);
 })

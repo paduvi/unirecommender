@@ -118,7 +118,7 @@ const get_list_university_major_in_branch = async (branch, university) => {
                     ma_truong: university_id
                 });
             });
-            list_major.concat(majors)
+            list_major = list_major.concat(majors)
         });
         console.log('write to file');
         await fs.writeJson('../src/data/major.json', list_major, {spaces: '\t'});
