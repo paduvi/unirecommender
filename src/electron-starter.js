@@ -125,9 +125,9 @@ app.on('ready', () => {
 app.on('window-all-closed', () => {
     // On OS X it is common for applications and their menu bar
     // to stay active until the user quits explicitly with Cmd + Q
-    if (process.platform !== 'darwin') {
-        app.quit()
-    }
+    // if (process.platform !== 'darwin') {
+    app.quit();
+    // }
 })
 
 app.on('activate', () => {
@@ -138,17 +138,13 @@ app.on('activate', () => {
     }
 });
 
-ipcMain.on('exit', () => {
-    mainWindow.close();
-})
-
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 ipcMain.on('recommend', (event, param) => {
     const matrix = list_major.map(major => {
-        const distance = param.total - major.diem_chuan;
+        const distance = param.total - Number(major.diem_chuan);
         const x1 = distance < 0 ? (1 + 5 * distance / 30) : (1 - distance / 30);
-        const x2 = 0.4 * major.chi_tieu_nganh / major.chi_tieu_truong * major.diem_chuan / major.diem_san + 0.6 * param.total / major.diem_chuan;
+        const x2 = 0.4 * Number(major.chi_tieu_nganh) / Number(major.chi_tieu_truong) * Number(major.diem_chuan) / Number(major.diem_san) + 0.6 * param.total / Number(major.diem_chuan);
         const x3 = (param.branch == major.branch) ? 1 : 0;
         const x4 = (major.khoi_thi.indexOf(param.block) == -1) ? 0 : 1;
         return [0.15 * x1, 0.05 * x2, 0.3 * x3, 0.5 * x4];

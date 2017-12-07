@@ -97,12 +97,12 @@ const get_list_university_major_in_branch = async (branch, university) => {
         let list_major = []
         Object.keys(major_data).forEach(university_id => {
             const chi_tieu_truong = getRandomInt(600, 1500);
-            const portions = major_data[university_id].map(major => major["diem_chuan"]);
+            const portions = major_data[university_id].map(major => Number(major["diem_chuan"]));
             const diem_san = math.min(portions);
 
             const sum_portion = portions.reduce((sum, portion) => sum + portion, 0);
             const majors = major_data[university_id].map(major => {
-                const portion = major["diem_chuan"] / sum_portion;
+                const portion = Number(major["diem_chuan"]) / sum_portion;
                 const temp_chi_tieu = Math.floor(chi_tieu_truong * portion);
                 return Object.assign({}, major, {
                     chi_tieu_nganh: temp_chi_tieu,
