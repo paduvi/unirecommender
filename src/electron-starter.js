@@ -1,14 +1,15 @@
 /**
  * Created by chotoxautinh on 6/1/17.
  */
-const electron = require('electron')
+const electron = require('electron');
 // Module to control application life.
-const app = electron.app
+const app = electron.app;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
-const path = require('path')
-const url = require('url')
-const {ipcMain} = require('electron')
+const path = require('path');
+const url = require('url');
+const {ipcMain} = require('electron');
+const math = require('mathjs');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -34,15 +35,18 @@ const preprocess_data = () => {
 
     list_major = store.get('list_major');
     if (!list_major) {
-        list_major = {
-
-        }
+        list_major = require('./data/major');
+        store.set('list_major', list_major);
     }
 
     // Object.assign(store, ...list_university.map(university => ({
     //     [university.id]: university
     // })));
     // console.log(store);
+}
+
+const range = (start, end) => {
+    return Array(end - start + 1).fill().map((_, idx) => start + idx)
 }
 
 const createWindow = () => {
@@ -133,7 +137,41 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 ipcMain.on('recommend', (event, param) => {
-    const diem_thi
+    const matrix = list_major.map(major => {
+        const distance = param.total - major.diem_chuan;
+        const x1 = distance < 0 ? (1 + 5 * distance / 30) : (1 - distance / 30);
+        const x2 = 0.4 * major.chi_tieu_nganh / major.chi_tieu_truong * major.diem_chuan / major.diem_san + 0.6 * param.total / major.diem_chuan;
+        const x3 = (param.branch == major.branch) ? 1 : 0;
+        const x4 = (major.khoi_thi.indexOf(param.block) == -1) ? 0 : 1;
+        return [0.15 * x1, 0.05 * x2, 0.3 * x3, 0.5 * x4];
+    });
+
+    const a_star = matrix.map(vector => math.max(vector));
+
+    const s_star = matrix.map((vector, i) => {
+        const v_star = a_star[i];
+        const result = vector.reduce((v) => Math.pow((v - v_star), 2), 0);
+        return Math.sqrt(result);
+    });
+
+    let indices = range(0, list_major.length - 1);
+    indices.sort((a, b) => s_star[a] - s_star[b]);
+
+    let result = {}
+
+    indices.forEach(index => {
+        const major = list_major[index];
+        const university_id = major.ma_truong;
+        let university;
+        if (result.hasOwnProperty(university_id)) {
+            university = result[university_id];
+        } else {
+            university = {
+                id: university_id,
+            }
+        }
+    })
+
     const data = [{
         key: '1',
         id: 'BKA',

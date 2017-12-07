@@ -73,6 +73,12 @@ const get_list_university_major_in_branch = async (branch, university) => {
         await fs.writeJson('../src/data/block.json', block_data, {spaces: '\t'});
         const list_university = require('./university');
 
+        let university_data = {}
+        list_university.forEach(({id, label}) => {
+            university_data[id] = label;
+        });
+        await fs.writeJson('../src/data/university.json', university_data, {spaces: '\t'});
+
         let major_data = {}
         const fn = async (branch, university) => {
             const majors = await get_list_university_major_in_branch(branch, university);
@@ -96,7 +102,7 @@ const get_list_university_major_in_branch = async (branch, university) => {
             if (!temp) {
                 chi_tieu_truong = getRandomInt(300, 1500);
             } else {
-                chi_tieu_truong = u["diemChuan"];
+                chi_tieu_truong = temp["diemChuan"];
             }
             const portions = major_data[university_id].map(major => major["diem_chuan"]);
             const diem_san = math.min(portions);

@@ -1,1090 +1,274 @@
-[
-  {
-    "label": "Học Viện An Ninh Nhân Dân",
-    "id": "ANH"
-  },
-  {
-    "label": "Đại Học An Ninh Nhân Dân",
-    "id": "ANS"
-  },
-  {
-    "label": "Đại Học Bách Khoa Hà Nội",
-    "id": "BKA"
-  },
-  {
-    "label": "Đại học Buôn Ma Thuột",
-    "id": "BMU"
-  },
-  {
-    "label": "Học Viện Biên Phòng",
-    "id": "BPH"
-  },
-  {
-    "label": "Học Viện Công Nghệ Bưu Chính Viễn Thông ( Phía Bắc )",
-    "id": "BVH"
-  },
-  {
-    "label": "Học Viện Công Nghệ Bưu Chính Viễn Thông (phía Nam)",
-    "id": "BVS"
-  },
-  {
-    "label": "Đại Học Bà Rịa – Vũng Tàu",
-    "id": "BVU"
-  },
-  {
-    "label": "Đại Học Công Nghiệp Dệt May Hà Nội",
-    "id": "CCM"
-  },
-  {
-    "label": "Đại học Kinh Tế Nghệ An",
-    "id": "CEA"
-  },
-  {
-    "label": "Học Viện Cảnh Sát Nhân Dân",
-    "id": "CSH"
-  },
-  {
-    "label": "Đại Học Cảnh Sát Nhân Dân",
-    "id": "CSS"
-  },
-  {
-    "label": "Đại Học Đông Á",
-    "id": "DAD"
-  },
-  {
-    "label": "Đại Học Bình Dương",
-    "id": "DBD"
-  },
-  {
-    "label": "Đại học Nông Lâm Bắc Giang",
-    "id": "DBG"
-  },
-  {
-    "label": "Đại Học Bạc Liêu",
-    "id": "DBL"
-  },
-  {
-    "label": "Đại Học Chu Văn An",
-    "id": "DCA"
-  },
-  {
-    "label": "Đại Học Công Nghệ Đồng Nai",
-    "id": "DCD"
-  },
-  {
-    "label": "Đại Học Tư Thục Công Nghệ Thông Tin Gia Định",
-    "id": "DCG"
-  },
-  {
-    "label": "Trường Sĩ Quan Đặc Công",
-    "id": "DCH"
-  },
-  {
-    "label": "Đại Học Cửu Long",
-    "id": "DCL"
-  },
-  {
-    "label": "Đại Học Công Nghiệp Hà Nội",
-    "id": "DCN"
-  },
-  {
-    "label": "Đại Học Công Nghiệp Thực Phẩm TP HCM",
-    "id": "DCT"
-  },
-  {
-    "label": "Đại học Công nghiệp Vinh",
-    "id": "DCV"
-  },
-  {
-    "label": "Đại Học Thành Đông",
-    "id": "DDB"
-  },
-  {
-    "label": "Đại Học Dân Lập Đông Đô",
-    "id": "DDD"
-  },
-  {
-    "label": "Đại Học Ngoại Ngữ – Đại Học Đà Nẵng",
-    "id": "DDF"
-  },
-  {
-    "label": "Đại Học Bách Khoa – Đại Học Đà Nẵng",
-    "id": "DDK"
-  },
-  {
-    "label": "Đại Học Điện Lực",
-    "id": "DDL"
-  },
-  {
-    "label": "Đại Học Công Nghiệp Quảng Ninh",
-    "id": "DDM"
-  },
-  {
-    "label": "Đại Học Đại Nam",
-    "id": "DDN"
-  },
-  {
-    "label": "Phân Hiệu Đại Học Đà Nẵng tại Kon Tum",
-    "id": "DDP"
-  },
-  {
-    "label": "Đại Học Kinh Tế – Đại Học Đà Nẵng",
-    "id": "DDQ"
-  },
-  {
-    "label": "Đại Học Sư Phạm – Đại Học Đà Nẵng",
-    "id": "DDS"
-  },
-  {
-    "label": "Đại Học Dân Lập Duy Tân",
-    "id": "DDT"
-  },
-  {
-    "label": "Khoa Y Dược – Đại Học Đà Nẵng",
-    "id": "DDY"
-  },
-  {
-    "label": "Đại học Tài Chính – Quản Trị Kinh Doanh",
-    "id": "DFA"
-  },
-  {
-    "label": "Đại học Luật - Đại Học Huế",
-    "id": "DHA"
-  },
-  {
-    "label": "Khoa Giáo Dục Thể Chất – Đại Học Huế",
-    "id": "DHC"
-  },
-  {
-    "label": "Khoa Du Lịch – Đại Học Huế",
-    "id": "DHD"
-  },
-  {
-    "label": "Đại Học Ngoại Ngữ – Đại Học Huế",
-    "id": "DHF"
-  },
-  {
-    "label": "Đại Học Kinh Tế – Đại Học Huế",
-    "id": "DHK"
-  },
-  {
-    "label": "Đại Học Nông Lâm – Đại Học Huế",
-    "id": "DHL"
-  },
-  {
-    "label": "Đại Học Nghệ Thuật – Đại Học Huế",
-    "id": "DHN"
-  },
-  {
-    "label": "Đại Học Dân Lập Hải Phòng",
-    "id": "DHP"
-  },
-  {
-    "label": "Phân Hiệu Đại Học Huế tại Quảng Trị",
-    "id": "DHQ"
-  },
-  {
-    "label": "Đại Học Sư Phạm – Đại Học Huế",
-    "id": "DHS"
-  },
-  {
-    "label": "Đại Học Khoa Học – Đại Học Huế",
-    "id": "DHT"
-  },
-  {
-    "label": "Đại học Hùng Vương - TPHCM",
-    "id": "DHV"
-  },
-  {
-    "label": "Đại Học Y Dược – Đại Học Huế",
-    "id": "DHY"
-  },
-  {
-    "label": "Đại Học Kinh Tế Kỹ Thuật Bình Dương",
-    "id": "DKB"
-  },
-  {
-    "label": "Đại học Công Nghệ TPHCM",
-    "id": "DKC"
-  },
-  {
-    "label": "Đại Học Dược Hà Nội",
-    "id": "DKH"
-  },
-  {
-    "label": "Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
-    "id": "DKK"
-  },
-  {
-    "label": "Đại học Tài Chính Kế Toán",
-    "id": "DKQ"
-  },
-  {
-    "label": "Đại học Kiếm Sát Hà Nội",
-    "id": "DKS"
-  },
-  {
-    "label": "Đại Học Hải Dương",
-    "id": "DKT"
-  },
-  {
-    "label": "Đại Học Kỹ Thuật Y Tế Hải Dương",
-    "id": "DKY"
-  },
-  {
-    "label": "Đại Học Kinh Tế Công Nghiệp Long An",
-    "id": "DLA"
-  },
-  {
-    "label": "Đại Học Lạc Hồng",
-    "id": "DLH"
-  },
-  {
-    "label": "Đại Học Lao Động – Xã Hội ( Cơ sở phía Nam)",
-    "id": "DLS"
-  },
-  {
-    "label": "Đại Học Lao Động – Xã Hội ( Cơ sở Sơn Tây )",
-    "id": "DLT"
-  },
-  {
-    "label": "Đại Học Lao Động – Xã Hội ( Cơ sở Hà Nội )",
-    "id": "DLX"
-  },
-  {
-    "label": "Đại học Công nghệ Miền Đông",
-    "id": "DMD"
-  },
-  {
-    "label": "Đại Học Tài Chính Marketing",
-    "id": "DMS"
-  },
-  {
-    "label": "Đại học Tài Nguyên và Môi Trường Hà Nội",
-    "id": "DMT"
-  },
-  {
-    "label": "Đại Học Hoa Lư",
-    "id": "DNB"
-  },
-  {
-    "label": "Đại học Nam Cần Thơ",
-    "id": "DNC"
-  },
-  {
-    "label": "Học Viện Khoa Học Quân Sự - Hệ Dân sự",
-    "id": "DNH"
-  },
-  {
-    "label": "Đại Học Ngoại Ngữ – Tin Học TPHCM",
-    "id": "DNT"
-  },
-  {
-    "label": "Đại Học Đồng Nai",
-    "id": "DNU"
-  },
-  {
-    "label": "Đại Học Nội Vụ",
-    "id": "DNV"
-  },
-  {
-    "label": "Đại Học Dân Lập Phương Đông",
-    "id": "DPD"
-  },
-  {
-    "label": "Đại Học Phạm Văn Đồng",
-    "id": "DPQ"
-  },
-  {
-    "label": "Đại Học Phan Thiết",
-    "id": "DPT"
-  },
-  {
-    "label": "Đại Học Dân Lập Phú Xuân",
-    "id": "DPX"
-  },
-  {
-    "label": "Đại Học Phú Yên",
-    "id": "DPY"
-  },
-  {
-    "label": "Đại Học Quảng Bình",
-    "id": "DQB"
-  },
-  {
-    "label": "Học Viện Kĩ Thuật Quân Sự - Hệ Dân sự",
-    "id": "DQH"
-  },
-  {
-    "label": "Đại Học Kinh Doanh và Công Nghệ Hà Nội",
-    "id": "DQK"
-  },
-  {
-    "label": "Đại Học Quy Nhơn",
-    "id": "DQN"
-  },
-  {
-    "label": "Đại Học Quang Trung",
-    "id": "DQT"
-  },
-  {
-    "label": "Đại Học Quảng Nam",
-    "id": "DQU"
-  },
-  {
-    "label": "Đại Học Sân Khấu, Điện Ảnh TPHCM",
-    "id": "DSD"
-  },
-  {
-    "label": "Đại Học Công Nghệ Sài Gòn",
-    "id": "DSG"
-  },
-  {
-    "label": "Đại Học Thành Tây",
-    "id": "DTA"
-  },
-  {
-    "label": "Đại Học Thái Bình",
-    "id": "DTB"
-  },
-  {
-    "label": "Đại học Công Nghệ Thông Tin và Truyền Thông – Đại Học Thái Nguyên",
-    "id": "DTC"
-  },
-  {
-    "label": "Đại Học Tây Đô",
-    "id": "DTD"
-  },
-  {
-    "label": "Đại Học Kinh Tế  & Quản Trị Kinh Doanh – Đại Học Thái Nguyên",
-    "id": "DTE"
-  },
-  {
-    "label": "Khoa Ngoại Ngữ – Đại Học Thái Nguyên",
-    "id": "DTF"
-  },
-  {
-    "label": "Đại Học Hoa Sen",
-    "id": "DTH"
-  },
-  {
-    "label": "Đại Học Kỹ Thuật Công Nghiệp – Đại Học Thái Nguyên",
-    "id": "DTK"
-  },
-  {
-    "label": "Đại Học Thăng Long",
-    "id": "DTL"
-  },
-  {
-    "label": "ĐH Tài Nguyên môi trường TPHCM",
-    "id": "DTM"
-  },
-  {
-    "label": "Đại Học Nông Lâm – Đại Học Thái Nguyên",
-    "id": "DTN"
-  },
-  {
-    "label": "Phân Hiệu Đại Học Thái Nguyên Tại Lào Cai",
-    "id": "DTP"
-  },
-  {
-    "label": "Khoa Quốc Tế - Đại Học Thái Nguyên",
-    "id": "DTQ"
-  },
-  {
-    "label": "Đại Học Sư Phạm – Đại Học Thái Nguyên",
-    "id": "DTS"
-  },
-  {
-    "label": "Đại Học Tôn Đức Thắng",
-    "id": "DTT"
-  },
-  {
-    "label": "Đại Học Y Dược – Đại Học Thái Nguyên",
-    "id": "DTY"
-  },
-  {
-    "label": "Đại Học Khoa Học – Đại Học Thái Nguyên",
-    "id": "DTZ"
-  },
-  {
-    "label": "Đại Học Văn Hóa, Thể Thao Và Du Lịch Thanh Hóa",
-    "id": "DVD"
-  },
-  {
-    "label": "Đại Học Văn Hiến",
-    "id": "DVH"
-  },
-  {
-    "label": "Đại Học Dân Lập Văn Lang",
-    "id": "DVL"
-  },
-  {
-    "label": "Đại Học Trà Vinh",
-    "id": "DVT"
-  },
-  {
-    "label": "Đại Học Công Nghệ Vạn Xuân",
-    "id": "DVX"
-  },
-  {
-    "label": "Học Viện Quân Y - Hệ Dân sự",
-    "id": "DYH"
-  },
-  {
-    "label": "Đại Học Quốc Tế Miền Đông",
-    "id": "EIU"
-  },
-  {
-    "label": "Đại Học Tài Chính Ngân Hàng Hà Nội",
-    "id": "FBU"
-  },
-  {
-    "label": "Đại Học Giao Thông Vận Tải ( Cơ sở Phía Bắc )",
-    "id": "GHA"
-  },
-  {
-    "label": "Đại Học Giao Thông Vận Tải ( Cơ sở Phía Nam)",
-    "id": "GSA"
-  },
-  {
-    "label": "Đại học Công nghệ Giao thông vận tải",
-    "id": "GTA"
-  },
-  {
-    "label": "Đại Học Giao Thông Vận Tải TPHCM",
-    "id": "GTS"
-  },
-  {
-    "label": "Học Viện Báo Chí – Tuyên Truyền",
-    "id": "HBT"
-  },
-  {
-    "label": "Đại Học Quốc Tế Hồng Bàng",
-    "id": "HBU"
-  },
-  {
-    "label": "Học Viện Chính Trị Công An Nhân Dân",
-    "id": "HCA"
-  },
-  {
-    "label": "Đại Học Kỹ Thuật - Hậu Cần Công An Nhân Dân ( Phía Bắc )",
-    "id": "HCB"
-  },
-  {
-    "label": "Học Viện Hành Chính Quốc Gia ( phía Bắc )",
-    "id": "HCH"
-  },
-  {
-    "label": "Đại Học Kỹ Thuật - Hậu Cần Công An Nhân Dân ( Phía Nam )",
-    "id": "HCN"
-  },
-  {
-    "label": "Học Viên Chính Sách và Phát Triển",
-    "id": "HCP"
-  },
-  {
-    "label": "Học Viện Hành Chính Quốc Gia (phía Nam)",
-    "id": "HCS"
-  },
-  {
-    "label": "Đại Học Hồng Đức",
-    "id": "HDT"
-  },
-  {
-    "label": "Học Viện Hậu Cần - Hệ Quân sự",
-    "id": "HEH"
-  },
-  {
-    "label": "Học Viện Hậu Cần - Hệ Dân sự",
-    "id": "HFH"
-  },
-  {
-    "label": "Trường Sĩ Quan Phòng Hóa",
-    "id": "HGH"
-  },
-  {
-    "label": "Đại Học Hàng Hải",
-    "id": "HHA"
-  },
-  {
-    "label": "Học Viện Hàng Không Việt Nam",
-    "id": "HHK"
-  },
-  {
-    "label": "Đại Học Hà Tĩnh",
-    "id": "HHT"
-  },
-  {
-    "label": "Đại Học Hạ Long",
-    "id": "HLU"
-  },
-  {
-    "label": "Đại học Thủ Đô Hà Nội",
-    "id": "HNM"
-  },
-  {
-    "label": "Học Viện Phụ Nữ Việt Nam",
-    "id": "HPN"
-  },
-  {
-    "label": "Học Viện Hải Quân",
-    "id": "HQH"
-  },
-  {
-    "label": "Học Viện Ngoại Giao",
-    "id": "HQT"
-  },
-  {
-    "label": "Học viện Tòa án",
-    "id": "HTA"
-  },
-  {
-    "label": "Học Viện Tài Chính",
-    "id": "HTC"
-  },
-  {
-    "label": "Học Viện Thanh Thiếu Niên Việt Nam",
-    "id": "HTN"
-  },
-  {
-    "label": "Đại Học Công Nghiệp TPHCM",
-    "id": "HUI"
-  },
-  {
-    "label": "Học viện cán bộ TPHCM",
-    "id": "HVC"
-  },
-  {
-    "label": "Học Viện Nông Nghiệp Việt Nam",
-    "id": "HVN"
-  },
-  {
-    "label": "Học Viện Quản Lý Giáo Dục",
-    "id": "HVQ"
-  },
-  {
-    "label": "Học Viện Y Dược Học Cổ Truyền Việt Nam",
-    "id": "HYD"
-  },
-  {
-    "label": "Đại học Kỹ Thuật Công Nghệ Cần Thơ",
-    "id": "KCC"
-  },
-  {
-    "label": "Trường Sĩ Quan Không Quân - Hệ Đại học",
-    "id": "KGH"
-  },
-  {
-    "label": "Đại Học Kinh Tế Quốc Dân",
-    "id": "KHA"
-  },
-  {
-    "label": "Học Viện Kỹ Thuật Mật Mã",
-    "id": "KMA"
-  },
-  {
-    "label": "Học Viện Kĩ Thuật Quân Sự - Hệ Quân sự",
-    "id": "KQH"
-  },
-  {
-    "label": "Đại Học Kinh Tế TPHCM",
-    "id": "KSA"
-  },
-  {
-    "label": "Đại Học Kiến Trúc Hà Nội",
-    "id": "KTA"
-  },
-  {
-    "label": "Đại Học Kinh Tế -Tài Chính TPHCM",
-    "id": "KTC"
-  },
-  {
-    "label": "Đại Học Kiến Trúc Đà Nẵng",
-    "id": "KTD"
-  },
-  {
-    "label": "Đại Học Kiến Trúc TPHCM",
-    "id": "KTS"
-  },
-  {
-    "label": "Trường Sĩ Quan Lục Quân 1 - Đại học Trần Quốc Tuấn",
-    "id": "LAH"
-  },
-  {
-    "label": "Trường Sĩ Quan Lục Quân 2 - Đại học Nguyễn Huệ",
-    "id": "LBH"
-  },
-  {
-    "label": "Đại học Nguyễn Huệ",
-    "id": "LBS"
-  },
-  {
-    "label": "Trường Sĩ Quan Chính Trị - Đại Học Chính Trị",
-    "id": "LCH"
-  },
-  {
-    "label": "Trường Sĩ quan Chính trị (hệ dân sự)",
-    "id": "LCS"
-  },
-  {
-    "label": "Đại Học Công Đoàn",
-    "id": "LDA"
-  },
-  {
-    "label": "Đại Học Lâm Nghiệp ( Cơ sở 1 )",
-    "id": "LNH"
-  },
-  {
-    "label": "Đại Học Lâm Nghiệp ( Cơ sở 2 )",
-    "id": "LNS"
-  },
-  {
-    "label": "Đại Học Luật Hà Nội",
-    "id": "LPH"
-  },
-  {
-    "label": "Đại Học Luật TPHCM",
-    "id": "LPS"
-  },
-  {
-    "label": "Đại Học Mở TPHCM",
-    "id": "MBS"
-  },
-  {
-    "label": "Đại Học Mỹ Thuật Công Nghiệp Á Châu",
-    "id": "MCA"
-  },
-  {
-    "label": "Đại Học Mỏ Địa Chất",
-    "id": "MDA"
-  },
-  {
-    "label": "Viện Đại Học Mở Hà Nội",
-    "id": "MHN"
-  },
-  {
-    "label": "Đại Học Mỹ Thuật Công Nghiệp",
-    "id": "MTC"
-  },
-  {
-    "label": "Đại Học Xây Dựng Miền Tây",
-    "id": "MTU"
-  },
-  {
-    "label": "Học Viện Ngân Hàng Phân Viện Bắc Ninh",
-    "id": "NHB"
-  },
-  {
-    "label": "Đại Học Hà Nội",
-    "id": "NHF"
-  },
-  {
-    "label": "Học Viện Ngân Hàng",
-    "id": "NHH"
-  },
-  {
-    "label": "Học Viên Ngân Hàng ( Phân Viện Phú Yên )",
-    "id": "NHP"
-  },
-  {
-    "label": "Đại Học Ngân Hàng TPHCM",
-    "id": "NHS"
-  },
-  {
-    "label": "Phân hiệu Đại học Nông Lâm TP. HCM tại Gia Lai",
-    "id": "NLG"
-  },
-  {
-    "label": "Phân hiệu Đại học Nông Lâm TP. HCM tại Ninh Thuận",
-    "id": "NLN"
-  },
-  {
-    "label": "Đại Học Nông Lâm TPHCM",
-    "id": "NLS"
-  },
-  {
-    "label": "Học Viện Khoa Học Quân Sự - Hệ Quân sự",
-    "id": "NQH"
-  },
-  {
-    "label": "Đại Học Ngoại Thương ( Cơ sở phía Bắc )",
-    "id": "NTH"
-  },
-  {
-    "label": "Đại Học Ngoại Thương (phía Nam)",
-    "id": "NTS"
-  },
-  {
-    "label": "Đại Học Nguyễn Tất Thành",
-    "id": "NTT"
-  },
-  {
-    "label": "Đại Học Nguyễn Trãi",
-    "id": "NTU"
-  },
-  {
-    "label": "Nhạc Viện TPHCM",
-    "id": "NVS"
-  },
-  {
-    "label": "Trường Sĩ Quan Pháo Binh",
-    "id": "PBH"
-  },
-  {
-    "label": "Đại Học Phòng Cháy Chữa Cháy ( Phía Bắc )",
-    "id": "PCH"
-  },
-  {
-    "label": "Đại Học Phòng Cháy Chữa Cháy (phía Nam)",
-    "id": "PCS"
-  },
-  {
-    "label": "Học Viện Phòng Không – Không Quân",
-    "id": "PKH"
-  },
-  {
-    "label": "Đại Học Dầu Khí Việt Nam",
-    "id": "PVU"
-  },
-  {
-    "label": "Đại Học Kinh Tế – Đại Học Quốc Gia Hà Nội",
-    "id": "QHE"
-  },
-  {
-    "label": "Đại Học Ngoại Ngữ – Đại Học Quốc Gia Hà Nội",
-    "id": "QHF"
-  },
-  {
-    "label": "Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội",
-    "id": "QHI"
-  },
-  {
-    "label": "Khoa Luật – Đại Học Quốc Gia Hà Nội",
-    "id": "QHL"
-  },
-  {
-    "label": "Khoa Quốc Tế – Đại Học Quốc Gia Hà Nội",
-    "id": "QHQ"
-  },
-  {
-    "label": "Đại Học Giáo Dục - Đại học Quốc Gia Hà Nội",
-    "id": "QHS"
-  },
-  {
-    "label": "Đại Học Khoa Học Tự Nhiên – Đại Học Quốc Gia Hà Nội",
-    "id": "QHT"
-  },
-  {
-    "label": "Đại Học Khoa Học Xã Hội và Nhân Văn – Đại Học Quốc Gia Hà Nội",
-    "id": "QHX"
-  },
-  {
-    "label": "Khoa Y Dược - Đại học Quốc Gia Hà Nội",
-    "id": "QHY"
-  },
-  {
-    "label": "Đại Học Bách Khoa – Đại Học Quốc Gia TPHCM",
-    "id": "QSB"
-  },
-  {
-    "label": "Đại Học Công Nghệ Thông Tin – Đại Học Quốc Gia TPHCM",
-    "id": "QSC"
-  },
-  {
-    "label": "Đại học Kinh Tế – Luật – Đại Học Quốc Gia TPHCM",
-    "id": "QSK"
-  },
-  {
-    "label": "Đại Học Quốc Tế – Đại Học Quốc Gia TPHCM",
-    "id": "QSQ"
-  },
-  {
-    "label": "Đại Học Khoa Học Tự Nhiên – Đại Học Quốc Gia TPHCM",
-    "id": "QST"
-  },
-  {
-    "label": "Đại Học Khoa Học Xã Hội và Nhân Văn – Đại Học Quốc Gia TPHCM",
-    "id": "QSX"
-  },
-  {
-    "label": "Khoa Y - Đại học Quốc Gia TPHCM",
-    "id": "QSY"
-  },
-  {
-    "label": "Đại học Sao Đỏ",
-    "id": "SDU"
-  },
-  {
-    "label": "Đại Học Sài Gòn",
-    "id": "SGD"
-  },
-  {
-    "label": "Đại Học Sân Khấu Điện Ảnh",
-    "id": "SKD"
-  },
-  {
-    "label": "Đại Học Sư Phạm Kỹ Thuật Hưng Yên",
-    "id": "SKH"
-  },
-  {
-    "label": "Đại Học Sư Phạm Kỹ Thuật Nam Định",
-    "id": "SKN"
-  },
-  {
-    "label": "Trường Sĩ Quan Công Binh - Hệ Quân sự - Đại học Ngô Quyền",
-    "id": "SNH"
-  },
-  {
-    "label": "Đại Học Sư Phạm Hà Nội 2",
-    "id": "SP2"
-  },
-  {
-    "label": "Đại Học Đồng Tháp",
-    "id": "SPD"
-  },
-  {
-    "label": "Đại Học Sư Phạm Hà Nội",
-    "id": "SPH"
-  },
-  {
-    "label": "Đại Học Sư Phạm Kỹ Thuật TPHCM",
-    "id": "SPK"
-  },
-  {
-    "label": "Đại Học Sư Phạm TPHCM",
-    "id": "SPS"
-  },
-  {
-    "label": "Đại Học Sư Phạm Thể DụcThể Thao TPHCM",
-    "id": "STS"
-  },
-  {
-    "label": "Đại Học An Giang",
-    "id": "TAG"
-  },
-  {
-    "label": "Đại Học Thái Bình Dương",
-    "id": "TBD"
-  },
-  {
-    "label": "Đại Học Cần Thơ",
-    "id": "TCT"
-  },
-  {
-    "label": "Đại Học Thể Dục Thể Thao Bắc Ninh",
-    "id": "TDB"
-  },
-  {
-    "label": "Đại học Thành Đô",
-    "id": "TDD"
-  },
-  {
-    "label": "Đại Học Đà Lạt",
-    "id": "TDL"
-  },
-  {
-    "label": "Đại học Thủ Dầu Một",
-    "id": "TDM"
-  },
-  {
-    "label": "Đại Học Thể Dục Thể Thao TPHCM",
-    "id": "TDS"
-  },
-  {
-    "label": "Đại Học Vinh",
-    "id": "TDV"
-  },
-  {
-    "label": "Trường Sĩ  Quan Tăng – Thiết Giáp",
-    "id": "TGH"
-  },
-  {
-    "label": "Đại Học Hải Phòng",
-    "id": "THP"
-  },
-  {
-    "label": "Đại Học Hùng Vương",
-    "id": "THV"
-  },
-  {
-    "label": "Đại Học Thủy Lợi ( Cơ sở 1 )",
-    "id": "TLA"
-  },
-  {
-    "label": "Đại Học Thủy Lợi ( Cơ sở 2 )",
-    "id": "TLS"
-  },
-  {
-    "label": "Đại Học Thương Mại",
-    "id": "TMA"
-  },
-  {
-    "label": "Đại học Tân Trào",
-    "id": "TQU"
-  },
-  {
-    "label": "Đại Học Nha Trang",
-    "id": "TSN"
-  },
-  {
-    "label": "Đại Học Thể DụcThể Thao Đà Nẵng",
-    "id": "TTD"
-  },
-  {
-    "label": "Đại Học Tiền Giang",
-    "id": "TTG"
-  },
-  {
-    "label": "Trường Sĩ Quan Thông Tin - Hệ Quân sự - Đại Học Thông Tin Liên Lạc",
-    "id": "TTH"
-  },
-  {
-    "label": "Đại Học Tây Nguyên",
-    "id": "TTN"
-  },
-  {
-    "label": "Đại Học Quốc Tế Sài Gòn",
-    "id": "TTQ"
-  },
-  {
-    "label": "Đại Học Y Khoa Phạm Ngọc Thạch",
-    "id": "TYS"
-  },
-  {
-    "label": "Đại Học Kinh Bắc",
-    "id": "UKB"
-  },
-  {
-    "label": "Đại học Khánh Hòa",
-    "id": "UKH"
-  },
-  {
-    "label": "Đại Học Việt Đức",
-    "id": "VGU"
-  },
-  {
-    "label": "Đại Học Công Nghiệp Việt Hung",
-    "id": "VHD"
-  },
-  {
-    "label": "Đại Học Văn Hóa Hà Nội",
-    "id": "VHH"
-  },
-  {
-    "label": "Đại Học Văn Hóa TPHCM",
-    "id": "VHS"
-  },
-  {
-    "label": "Đại Học Sư Phạm Kỹ Thuật Vĩnh Long",
-    "id": "VLU"
-  },
-  {
-    "label": "Trường Sĩ Quan Kĩ Thuật Quân Sự -  Hệ Quân sự - Đại Học Trần Đại Nghĩa",
-    "id": "VPH"
-  },
-  {
-    "label": "Đại Học Công Nghiệp Việt Trì",
-    "id": "VUI"
-  },
-  {
-    "label": "Đại Học Xây Dựng Hà Nội",
-    "id": "XDA"
-  },
-  {
-    "label": "Đại Học Xây Dựng Miền Trung",
-    "id": "XDT"
-  },
-  {
-    "label": "Đại Học Y Dược Cần Thơ",
-    "id": "YCT"
-  },
-  {
-    "label": "Đại Học Điều Dưỡng Nam Định",
-    "id": "YDD"
-  },
-  {
-    "label": "Đại học Kỹ thuật Y Dược Đà Nẵng",
-    "id": "YDN"
-  },
-  {
-    "label": "Đại Học Y Dược TPHCM",
-    "id": "YDS"
-  },
-  {
-    "label": "Đại Học Y Hà Nội",
-    "id": "YHB"
-  },
-  {
-    "label": "Đại Học Y Khoa Vinh",
-    "id": "YKV"
-  },
-  {
-    "label": "Đại Học Y Hải Phòng",
-    "id": "YPB"
-  },
-  {
-    "label": "Học Viện Quân Y - Hệ Quân sự",
-    "id": "YQH"
-  },
-  {
-    "label": "Đại Học Y Dược Thái Bình",
-    "id": "YTB"
-  },
-  {
-    "label": "Đại Học Y Tế Công Cộng",
-    "id": "YTC"
-  },
-  {
-    "label": "Trường Sĩ Quan Công Binh - Hệ Dân sự - Đại học Ngô Quyền",
-    "id": "ZCH"
-  },
-  {
-    "label": "Đại Học Văn Hóa – Nghệ Thuật Quân Đội",
-    "id": "ZNH"
-  },
-  {
-    "label": "Cao Đẳng Kỹ Thuật Cao Thắng",
-    "id": "CKC"
-  },
-  {
-    "label": "Khoa Công Nghệ – Đại Học Đà Nẵng",
-    "id": "DDC"
-  },
-  {
-    "label": "Cao Đẳng Công Nghệ Thông Tin – Đại Học Đà Nẵng",
-    "id": "DDI"
-  },
-  {
-    "label": "Đại Học FPT",
-    "id": "FPT"
-  },
-  {
-    "label": "Đại Học Mỹ Thuật Việt Nam",
-    "id": "MTH"
-  },
-  {
-    "label": "Đại Học Mỹ Thuật TPHCM",
-    "id": "MTS"
-  },
-  {
-    "label": "Trường Sĩ Quan Thông Tin - Hệ Dân Sự - Đại Học Thông Tin Liên Lạc",
-    "id": "TCU"
-  },
-  {
-    "label": "Đại học Kiên Giang",
-    "id": "TKG"
-  },
-  {
-    "label": "Đại Học Tây Bắc",
-    "id": "TTB"
-  },
-  {
-    "label": "Đại Học Võ Trường Toản",
-    "id": "VTT"
-  },
-  {
-    "label": "Trường Sĩ Quan Kĩ Thuật Quân Sự - Hệ Dân sự - Đại Học Trần Đại Nghĩa",
-    "id": "ZPH"
-  }
-]
+{
+	"ANH": "Học Viện An Ninh Nhân Dân",
+	"ANS": "Đại Học An Ninh Nhân Dân",
+	"BKA": "Đại Học Bách Khoa Hà Nội",
+	"BMU": "Đại học Buôn Ma Thuột",
+	"BPH": "Học Viện Biên Phòng",
+	"BVH": "Học Viện Công Nghệ Bưu Chính Viễn Thông ( Phía Bắc )",
+	"BVS": "Học Viện Công Nghệ Bưu Chính Viễn Thông (phía Nam)",
+	"BVU": "Đại Học Bà Rịa – Vũng Tàu",
+	"CCM": "Đại Học Công Nghiệp Dệt May Hà Nội",
+	"CEA": "Đại học Kinh Tế Nghệ An",
+	"CSH": "Học Viện Cảnh Sát Nhân Dân",
+	"CSS": "Đại Học Cảnh Sát Nhân Dân",
+	"DAD": "Đại Học Đông Á",
+	"DBD": "Đại Học Bình Dương",
+	"DBG": "Đại học Nông Lâm Bắc Giang",
+	"DBL": "Đại Học Bạc Liêu",
+	"DCA": "Đại Học Chu Văn An",
+	"DCD": "Đại Học Công Nghệ Đồng Nai",
+	"DCG": "Đại Học Tư Thục Công Nghệ Thông Tin Gia Định",
+	"DCH": "Trường Sĩ Quan Đặc Công",
+	"DCL": "Đại Học Cửu Long",
+	"DCN": "Đại Học Công Nghiệp Hà Nội",
+	"DCT": "Đại Học Công Nghiệp Thực Phẩm TP HCM",
+	"DCV": "Đại học Công nghiệp Vinh",
+	"DDB": "Đại Học Thành Đông",
+	"DDD": "Đại Học Dân Lập Đông Đô",
+	"DDF": "Đại Học Ngoại Ngữ – Đại Học Đà Nẵng",
+	"DDK": "Đại Học Bách Khoa – Đại Học Đà Nẵng",
+	"DDL": "Đại Học Điện Lực",
+	"DDM": "Đại Học Công Nghiệp Quảng Ninh",
+	"DDN": "Đại Học Đại Nam",
+	"DDP": "Phân Hiệu Đại Học Đà Nẵng tại Kon Tum",
+	"DDQ": "Đại Học Kinh Tế – Đại Học Đà Nẵng",
+	"DDS": "Đại Học Sư Phạm – Đại Học Đà Nẵng",
+	"DDT": "Đại Học Dân Lập Duy Tân",
+	"DDY": "Khoa Y Dược – Đại Học Đà Nẵng",
+	"DFA": "Đại học Tài Chính – Quản Trị Kinh Doanh",
+	"DHA": "Đại học Luật - Đại Học Huế",
+	"DHC": "Khoa Giáo Dục Thể Chất – Đại Học Huế",
+	"DHD": "Khoa Du Lịch – Đại Học Huế",
+	"DHF": "Đại Học Ngoại Ngữ – Đại Học Huế",
+	"DHK": "Đại Học Kinh Tế – Đại Học Huế",
+	"DHL": "Đại Học Nông Lâm – Đại Học Huế",
+	"DHN": "Đại Học Nghệ Thuật – Đại Học Huế",
+	"DHP": "Đại Học Dân Lập Hải Phòng",
+	"DHQ": "Phân Hiệu Đại Học Huế tại Quảng Trị",
+	"DHS": "Đại Học Sư Phạm – Đại Học Huế",
+	"DHT": "Đại Học Khoa Học – Đại Học Huế",
+	"DHV": "Đại học Hùng Vương - TPHCM",
+	"DHY": "Đại Học Y Dược – Đại Học Huế",
+	"DKB": "Đại Học Kinh Tế Kỹ Thuật Bình Dương",
+	"DKC": "Đại học Công Nghệ TPHCM",
+	"DKH": "Đại Học Dược Hà Nội",
+	"DKK": "Đại Học Kinh Tế Kỹ Thuật Công Nghiệp",
+	"DKQ": "Đại học Tài Chính Kế Toán",
+	"DKS": "Đại học Kiếm Sát Hà Nội",
+	"DKT": "Đại Học Hải Dương",
+	"DKY": "Đại Học Kỹ Thuật Y Tế Hải Dương",
+	"DLA": "Đại Học Kinh Tế Công Nghiệp Long An",
+	"DLH": "Đại Học Lạc Hồng",
+	"DLS": "Đại Học Lao Động – Xã Hội ( Cơ sở phía Nam)",
+	"DLT": "Đại Học Lao Động – Xã Hội ( Cơ sở Sơn Tây )",
+	"DLX": "Đại Học Lao Động – Xã Hội ( Cơ sở Hà Nội )",
+	"DMD": "Đại học Công nghệ Miền Đông",
+	"DMS": "Đại Học Tài Chính Marketing",
+	"DMT": "Đại học Tài Nguyên và Môi Trường Hà Nội",
+	"DNB": "Đại Học Hoa Lư",
+	"DNC": "Đại học Nam Cần Thơ",
+	"DNH": "Học Viện Khoa Học Quân Sự - Hệ Dân sự",
+	"DNT": "Đại Học Ngoại Ngữ – Tin Học TPHCM",
+	"DNU": "Đại Học Đồng Nai",
+	"DNV": "Đại Học Nội Vụ",
+	"DPD": "Đại Học Dân Lập Phương Đông",
+	"DPQ": "Đại Học Phạm Văn Đồng",
+	"DPT": "Đại Học Phan Thiết",
+	"DPX": "Đại Học Dân Lập Phú Xuân",
+	"DPY": "Đại Học Phú Yên",
+	"DQB": "Đại Học Quảng Bình",
+	"DQH": "Học Viện Kĩ Thuật Quân Sự - Hệ Dân sự",
+	"DQK": "Đại Học Kinh Doanh và Công Nghệ Hà Nội",
+	"DQN": "Đại Học Quy Nhơn",
+	"DQT": "Đại Học Quang Trung",
+	"DQU": "Đại Học Quảng Nam",
+	"DSD": "Đại Học Sân Khấu, Điện Ảnh TPHCM",
+	"DSG": "Đại Học Công Nghệ Sài Gòn",
+	"DTA": "Đại Học Thành Tây",
+	"DTB": "Đại Học Thái Bình",
+	"DTC": "Đại học Công Nghệ Thông Tin và Truyền Thông – Đại Học Thái Nguyên",
+	"DTD": "Đại Học Tây Đô",
+	"DTE": "Đại Học Kinh Tế  & Quản Trị Kinh Doanh – Đại Học Thái Nguyên",
+	"DTF": "Khoa Ngoại Ngữ – Đại Học Thái Nguyên",
+	"DTH": "Đại Học Hoa Sen",
+	"DTK": "Đại Học Kỹ Thuật Công Nghiệp – Đại Học Thái Nguyên",
+	"DTL": "Đại Học Thăng Long",
+	"DTM": "ĐH Tài Nguyên môi trường TPHCM",
+	"DTN": "Đại Học Nông Lâm – Đại Học Thái Nguyên",
+	"DTP": "Phân Hiệu Đại Học Thái Nguyên Tại Lào Cai",
+	"DTQ": "Khoa Quốc Tế - Đại Học Thái Nguyên",
+	"DTS": "Đại Học Sư Phạm – Đại Học Thái Nguyên",
+	"DTT": "Đại Học Tôn Đức Thắng",
+	"DTY": "Đại Học Y Dược – Đại Học Thái Nguyên",
+	"DTZ": "Đại Học Khoa Học – Đại Học Thái Nguyên",
+	"DVD": "Đại Học Văn Hóa, Thể Thao Và Du Lịch Thanh Hóa",
+	"DVH": "Đại Học Văn Hiến",
+	"DVL": "Đại Học Dân Lập Văn Lang",
+	"DVT": "Đại Học Trà Vinh",
+	"DVX": "Đại Học Công Nghệ Vạn Xuân",
+	"DYH": "Học Viện Quân Y - Hệ Dân sự",
+	"EIU": "Đại Học Quốc Tế Miền Đông",
+	"FBU": "Đại Học Tài Chính Ngân Hàng Hà Nội",
+	"GHA": "Đại Học Giao Thông Vận Tải ( Cơ sở Phía Bắc )",
+	"GSA": "Đại Học Giao Thông Vận Tải ( Cơ sở Phía Nam)",
+	"GTA": "Đại học Công nghệ Giao thông vận tải",
+	"GTS": "Đại Học Giao Thông Vận Tải TPHCM",
+	"HBT": "Học Viện Báo Chí – Tuyên Truyền",
+	"HBU": "Đại Học Quốc Tế Hồng Bàng",
+	"HCA": "Học Viện Chính Trị Công An Nhân Dân",
+	"HCB": "Đại Học Kỹ Thuật - Hậu Cần Công An Nhân Dân ( Phía Bắc )",
+	"HCH": "Học Viện Hành Chính Quốc Gia ( phía Bắc )",
+	"HCN": "Đại Học Kỹ Thuật - Hậu Cần Công An Nhân Dân ( Phía Nam )",
+	"HCP": "Học Viên Chính Sách và Phát Triển",
+	"HCS": "Học Viện Hành Chính Quốc Gia (phía Nam)",
+	"HDT": "Đại Học Hồng Đức",
+	"HEH": "Học Viện Hậu Cần - Hệ Quân sự",
+	"HFH": "Học Viện Hậu Cần - Hệ Dân sự",
+	"HGH": "Trường Sĩ Quan Phòng Hóa",
+	"HHA": "Đại Học Hàng Hải",
+	"HHK": "Học Viện Hàng Không Việt Nam",
+	"HHT": "Đại Học Hà Tĩnh",
+	"HLU": "Đại Học Hạ Long",
+	"HNM": "Đại học Thủ Đô Hà Nội",
+	"HPN": "Học Viện Phụ Nữ Việt Nam",
+	"HQH": "Học Viện Hải Quân",
+	"HQT": "Học Viện Ngoại Giao",
+	"HTA": "Học viện Tòa án",
+	"HTC": "Học Viện Tài Chính",
+	"HTN": "Học Viện Thanh Thiếu Niên Việt Nam",
+	"HUI": "Đại Học Công Nghiệp TPHCM",
+	"HVC": "Học viện cán bộ TPHCM",
+	"HVN": "Học Viện Nông Nghiệp Việt Nam",
+	"HVQ": "Học Viện Quản Lý Giáo Dục",
+	"HYD": "Học Viện Y Dược Học Cổ Truyền Việt Nam",
+	"KCC": "Đại học Kỹ Thuật Công Nghệ Cần Thơ",
+	"KGH": "Trường Sĩ Quan Không Quân - Hệ Đại học",
+	"KHA": "Đại Học Kinh Tế Quốc Dân",
+	"KMA": "Học Viện Kỹ Thuật Mật Mã",
+	"KQH": "Học Viện Kĩ Thuật Quân Sự - Hệ Quân sự",
+	"KSA": "Đại Học Kinh Tế TPHCM",
+	"KTA": "Đại Học Kiến Trúc Hà Nội",
+	"KTC": "Đại Học Kinh Tế -Tài Chính TPHCM",
+	"KTD": "Đại Học Kiến Trúc Đà Nẵng",
+	"KTS": "Đại Học Kiến Trúc TPHCM",
+	"LAH": "Trường Sĩ Quan Lục Quân 1 - Đại học Trần Quốc Tuấn",
+	"LBH": "Trường Sĩ Quan Lục Quân 2 - Đại học Nguyễn Huệ",
+	"LBS": "Đại học Nguyễn Huệ",
+	"LCH": "Trường Sĩ Quan Chính Trị - Đại Học Chính Trị",
+	"LCS": "Trường Sĩ quan Chính trị (hệ dân sự)",
+	"LDA": "Đại Học Công Đoàn",
+	"LNH": "Đại Học Lâm Nghiệp ( Cơ sở 1 )",
+	"LNS": "Đại Học Lâm Nghiệp ( Cơ sở 2 )",
+	"LPH": "Đại Học Luật Hà Nội",
+	"LPS": "Đại Học Luật TPHCM",
+	"MBS": "Đại Học Mở TPHCM",
+	"MCA": "Đại Học Mỹ Thuật Công Nghiệp Á Châu",
+	"MDA": "Đại Học Mỏ Địa Chất",
+	"MHN": "Viện Đại Học Mở Hà Nội",
+	"MTC": "Đại Học Mỹ Thuật Công Nghiệp",
+	"MTU": "Đại Học Xây Dựng Miền Tây",
+	"NHB": "Học Viện Ngân Hàng Phân Viện Bắc Ninh",
+	"NHF": "Đại Học Hà Nội",
+	"NHH": "Học Viện Ngân Hàng",
+	"NHP": "Học Viên Ngân Hàng ( Phân Viện Phú Yên )",
+	"NHS": "Đại Học Ngân Hàng TPHCM",
+	"NLG": "Phân hiệu Đại học Nông Lâm TP. HCM tại Gia Lai",
+	"NLN": "Phân hiệu Đại học Nông Lâm TP. HCM tại Ninh Thuận",
+	"NLS": "Đại Học Nông Lâm TPHCM",
+	"NQH": "Học Viện Khoa Học Quân Sự - Hệ Quân sự",
+	"NTH": "Đại Học Ngoại Thương ( Cơ sở phía Bắc )",
+	"NTS": "Đại Học Ngoại Thương (phía Nam)",
+	"NTT": "Đại Học Nguyễn Tất Thành",
+	"NTU": "Đại Học Nguyễn Trãi",
+	"NVS": "Nhạc Viện TPHCM",
+	"PBH": "Trường Sĩ Quan Pháo Binh",
+	"PCH": "Đại Học Phòng Cháy Chữa Cháy ( Phía Bắc )",
+	"PCS": "Đại Học Phòng Cháy Chữa Cháy (phía Nam)",
+	"PKH": "Học Viện Phòng Không – Không Quân",
+	"PVU": "Đại Học Dầu Khí Việt Nam",
+	"QHE": "Đại Học Kinh Tế – Đại Học Quốc Gia Hà Nội",
+	"QHF": "Đại Học Ngoại Ngữ – Đại Học Quốc Gia Hà Nội",
+	"QHI": "Đại Học Công Nghệ – Đại Học Quốc Gia Hà Nội",
+	"QHL": "Khoa Luật – Đại Học Quốc Gia Hà Nội",
+	"QHQ": "Khoa Quốc Tế – Đại Học Quốc Gia Hà Nội",
+	"QHS": "Đại Học Giáo Dục - Đại học Quốc Gia Hà Nội",
+	"QHT": "Đại Học Khoa Học Tự Nhiên – Đại Học Quốc Gia Hà Nội",
+	"QHX": "Đại Học Khoa Học Xã Hội và Nhân Văn – Đại Học Quốc Gia Hà Nội",
+	"QHY": "Khoa Y Dược - Đại học Quốc Gia Hà Nội",
+	"QSB": "Đại Học Bách Khoa – Đại Học Quốc Gia TPHCM",
+	"QSC": "Đại Học Công Nghệ Thông Tin – Đại Học Quốc Gia TPHCM",
+	"QSK": "Đại học Kinh Tế – Luật – Đại Học Quốc Gia TPHCM",
+	"QSQ": "Đại Học Quốc Tế – Đại Học Quốc Gia TPHCM",
+	"QST": "Đại Học Khoa Học Tự Nhiên – Đại Học Quốc Gia TPHCM",
+	"QSX": "Đại Học Khoa Học Xã Hội và Nhân Văn – Đại Học Quốc Gia TPHCM",
+	"QSY": "Khoa Y - Đại học Quốc Gia TPHCM",
+	"SDU": "Đại học Sao Đỏ",
+	"SGD": "Đại Học Sài Gòn",
+	"SKD": "Đại Học Sân Khấu Điện Ảnh",
+	"SKH": "Đại Học Sư Phạm Kỹ Thuật Hưng Yên",
+	"SKN": "Đại Học Sư Phạm Kỹ Thuật Nam Định",
+	"SNH": "Trường Sĩ Quan Công Binh - Hệ Quân sự - Đại học Ngô Quyền",
+	"SP2": "Đại Học Sư Phạm Hà Nội 2",
+	"SPD": "Đại Học Đồng Tháp",
+	"SPH": "Đại Học Sư Phạm Hà Nội",
+	"SPK": "Đại Học Sư Phạm Kỹ Thuật TPHCM",
+	"SPS": "Đại Học Sư Phạm TPHCM",
+	"STS": "Đại Học Sư Phạm Thể DụcThể Thao TPHCM",
+	"TAG": "Đại Học An Giang",
+	"TBD": "Đại Học Thái Bình Dương",
+	"TCT": "Đại Học Cần Thơ",
+	"TDB": "Đại Học Thể Dục Thể Thao Bắc Ninh",
+	"TDD": "Đại học Thành Đô",
+	"TDL": "Đại Học Đà Lạt",
+	"TDM": "Đại học Thủ Dầu Một",
+	"TDS": "Đại Học Thể Dục Thể Thao TPHCM",
+	"TDV": "Đại Học Vinh",
+	"TGH": "Trường Sĩ  Quan Tăng – Thiết Giáp",
+	"THP": "Đại Học Hải Phòng",
+	"THV": "Đại Học Hùng Vương",
+	"TLA": "Đại Học Thủy Lợi ( Cơ sở 1 )",
+	"TLS": "Đại Học Thủy Lợi ( Cơ sở 2 )",
+	"TMA": "Đại Học Thương Mại",
+	"TQU": "Đại học Tân Trào",
+	"TSN": "Đại Học Nha Trang",
+	"TTD": "Đại Học Thể DụcThể Thao Đà Nẵng",
+	"TTG": "Đại Học Tiền Giang",
+	"TTH": "Trường Sĩ Quan Thông Tin - Hệ Quân sự - Đại Học Thông Tin Liên Lạc",
+	"TTN": "Đại Học Tây Nguyên",
+	"TTQ": "Đại Học Quốc Tế Sài Gòn",
+	"TYS": "Đại Học Y Khoa Phạm Ngọc Thạch",
+	"UKB": "Đại Học Kinh Bắc",
+	"UKH": "Đại học Khánh Hòa",
+	"VGU": "Đại Học Việt Đức",
+	"VHD": "Đại Học Công Nghiệp Việt Hung",
+	"VHH": "Đại Học Văn Hóa Hà Nội",
+	"VHS": "Đại Học Văn Hóa TPHCM",
+	"VLU": "Đại Học Sư Phạm Kỹ Thuật Vĩnh Long",
+	"VPH": "Trường Sĩ Quan Kĩ Thuật Quân Sự -  Hệ Quân sự - Đại Học Trần Đại Nghĩa",
+	"VUI": "Đại Học Công Nghiệp Việt Trì",
+	"XDA": "Đại Học Xây Dựng Hà Nội",
+	"XDT": "Đại Học Xây Dựng Miền Trung",
+	"YCT": "Đại Học Y Dược Cần Thơ",
+	"YDD": "Đại Học Điều Dưỡng Nam Định",
+	"YDN": "Đại học Kỹ thuật Y Dược Đà Nẵng",
+	"YDS": "Đại Học Y Dược TPHCM",
+	"YHB": "Đại Học Y Hà Nội",
+	"YKV": "Đại Học Y Khoa Vinh",
+	"YPB": "Đại Học Y Hải Phòng",
+	"YQH": "Học Viện Quân Y - Hệ Quân sự",
+	"YTB": "Đại Học Y Dược Thái Bình",
+	"YTC": "Đại Học Y Tế Công Cộng",
+	"ZCH": "Trường Sĩ Quan Công Binh - Hệ Dân sự - Đại học Ngô Quyền",
+	"ZNH": "Đại Học Văn Hóa – Nghệ Thuật Quân Đội",
+	"CKC": "Cao Đẳng Kỹ Thuật Cao Thắng",
+	"DDC": "Khoa Công Nghệ – Đại Học Đà Nẵng",
+	"DDI": "Cao Đẳng Công Nghệ Thông Tin – Đại Học Đà Nẵng",
+	"FPT": "Đại Học FPT",
+	"MTH": "Đại Học Mỹ Thuật Việt Nam",
+	"MTS": "Đại Học Mỹ Thuật TPHCM",
+	"TCU": "Trường Sĩ Quan Thông Tin - Hệ Dân Sự - Đại Học Thông Tin Liên Lạc",
+	"TKG": "Đại học Kiên Giang",
+	"TTB": "Đại Học Tây Bắc",
+	"VTT": "Đại Học Võ Trường Toản",
+	"ZPH": "Trường Sĩ Quan Kĩ Thuật Quân Sự - Hệ Dân sự - Đại Học Trần Đại Nghĩa"
+}
