@@ -1,6 +1,7 @@
 const cheerio = require('cheerio');
 const rp = require('request-promise-native');
 const fs = require('fs-extra');
+const math = require('mathjs');
 
 
 const crawl_data = async (url = 'http://diemthi.tuyensinh247.com/tu-van-chon-truong.html') => {
@@ -20,6 +21,8 @@ const parse_branch_data = (html) => {
         }
     }).get();
 }
+
+const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const parse_block_data = (html) => {
     const $ = cheerio.load(html);
@@ -49,6 +52,7 @@ const get_list_university_major_in_branch = async (branch, university) => {
             blocks = ["A00"];
         }
         const major = {
+            branch,
             'ma_nganh': el.find('td:nth-child(2)').text(),
             'khoi_thi': blocks,
             'ten_nganh': el.find('td:nth-child(3)').text(),
@@ -75,16 +79,35 @@ const get_list_university_major_in_branch = async (branch, university) => {
             if (!majors.length)
                 return Promise.resolve();
             if (!major_data[university]) {
-                major_data[university] = {}
+                major_data[university] = []
             }
-            Object.assign(major_data[university], {
-                [branch]: majors
-            });
+            major_data[university].push(...majors);
             return Promise.resolve();
         }
         await branch_data.reduce((p1, branch) => p1
             .then(() => list_university.reduce((p2, university) => p2
                 .then(() => fn(branch.id, university.id)), Promise.resolve())), Promise.resolve());
+
+        const list_chi_tieu = require('./diemchuan');
+        Object.keys(major_data).forEach(university_id => {
+            const temp = list_chi_tieu.filter(u => u["maTruong"] == university_id)[0];
+            let chi_tieu;
+            if (!temp) {
+                chi_tieu = getRandomInt(300, 1500);
+            } else {
+                chi_tieu = u["diemChuan"];
+            }
+            const portions = major_data[university_id].map(major => major["diem_chuan"]);
+            const diem_san = math.min(portions);
+
+            const sum_portion = portions.reduce((sum, portion) => sum + Math.exp(portion), 0);
+            const majors = major_data[university_id].map(major => {
+                const portion = Math.exp(major["diem_chuan"]) / sum_portion;
+                const temp_chi_tieu = chi_tieu * portion;
+                return Object.assign({}, major, {chi_tieu: temp_chi_tieu, diem_san});
+            });
+            major_data[university_id] = majors;
+        });
         console.log('write to file');
         await fs.writeJson('../src/data/major.json', major_data, {spaces: '\t'});
         console.log('Done');
