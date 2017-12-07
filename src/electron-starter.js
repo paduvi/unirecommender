@@ -21,8 +21,6 @@ const store = new Store();
 let list_branch, list_block, list_major, list_university;
 
 const preprocess_data = () => {
-    store.clear();
-
     list_branch = store.get('list_branch');
     if (!list_branch) {
         list_branch = require('./data/branch');
@@ -42,15 +40,13 @@ const preprocess_data = () => {
     }
 
     list_university = store.get('list_university');
-    if (!list_major) {
-        list_major = require('./data/university');
+    if (!list_university) {
+        list_university = require('./data/university');
         store.set('list_university', list_university);
     }
 }
 
-const range = (start, end) => {
-    return Array(end - start + 1).fill().map((_, idx) => start + idx)
-}
+const range = (start, end) => Array(end - start + 1).fill().map((_, idx) => start + idx);
 
 const createWindow = () => {
     // Create the browser window.
@@ -141,25 +137,23 @@ app.on('activate', () => {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 ipcMain.on('recommend', (event, param) => {
+    const max_score = math.max(list_major.map(major => Number(major.diem_chuan)).concat(30));
     const matrix = list_major.map(major => {
-        const distance = param.total - Number(major.diem_chuan);
-        const x1 = distance < 0 ? (1 + 5 * distance / 30) : (1 - distance / 30);
-        const x2 = 0.4 * Number(major.chi_tieu_nganh) / Number(major.chi_tieu_truong) * Number(major.diem_chuan) / Number(major.diem_san) + 0.6 * param.total / Number(major.diem_chuan);
+        const distance = Number(param.total) - Number(major.diem_chuan);
+        const x1 = distance < 0 ? (1 + 5 * distance / max_score) : (1 - distance / max_score);
+        const x2 = (0.4 * Number(major.chi_tieu_nganh) / Number(major.chi_tieu_truong) * Number(major.diem_chuan) / Number(major.diem_san) + 0.6 * Number(param.total) / Number(major.diem_chuan)) / 2;
         const x3 = (param.branch == major.branch) ? 1 : 0;
         const x4 = (major.khoi_thi.indexOf(param.block) == -1) ? 0 : 1;
-        return [0.15 * x1, 0.05 * x2, 0.3 * x3, 0.5 * x4];
+
+        const vector = [0.15 * x1, 0.05 * x2, 0.3 * x3, 0.5 * x4];
+
+        return vector;
     });
 
-    const a_star = matrix.map(vector => math.max(vector));
-
-    const s_star = matrix.map((vector, i) => {
-        const v_star = a_star[i];
-        const result = vector.reduce((v) => Math.pow((v - v_star), 2), 0);
-        return Math.sqrt(result);
-    });
+    const sum_vector = vector => vector.reduce((sum, x) => sum + x, 0);
 
     let indices = range(0, list_major.length - 1);
-    indices.sort((a, b) => s_star[a] - s_star[b]);
+    indices.sort((a, b) => sum_vector(matrix[b]) - sum_vector(matrix[a]));
 
     const result = indices.map((major_index, sort_index) => Object.assign({}, list_major[major_index], {
         key: sort_index + 1,

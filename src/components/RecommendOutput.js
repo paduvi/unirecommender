@@ -1,5 +1,7 @@
 import React from 'react';
 import {Table, Spin} from 'antd';
+import * as qs from 'query-string';
+
 
 const ipcRenderer = window.require('electron').ipcRenderer;
 
@@ -15,10 +17,7 @@ class RecommendOutput extends React.Component {
 
     loadData = async () => {
         const results = await new Promise(resolve => {
-            ipcRenderer.send('recommend', {
-                brand: 7,
-                total: 25
-            });
+            ipcRenderer.send('recommend', qs.parse(this.props.location.search));
 
             ipcRenderer.on('recommend-response', (event, results) => {
                 resolve(results);
@@ -34,9 +33,14 @@ class RecommendOutput extends React.Component {
             );
 
         const columns = [{
+            title: 'STT',
+            dataIndex: 'key',
+            width: 50,
+            key: 'key'
+        }, {
             title: 'Mã ngành',
             dataIndex: 'ma_nganh',
-            width: 50,
+            width: 100,
             key: 'ma_nganh'
         }, {
             title: 'Tên ngành',
@@ -45,11 +49,22 @@ class RecommendOutput extends React.Component {
         }, {
             title: 'Tên trường',
             dataIndex: 'ten_truong',
-            key: 'ten_truong'
+            key: 'ten_truong',
+            width: 400
+        }, {
+            title: 'Điểm chuẩn',
+            dataIndex: 'diem_chuan',
+            key: 'diem_chuan',
+            width: 150
+        }, {
+            title: 'Chỉ tiêu',
+            dataIndex: 'chi_tieu_nganh',
+            key: 'chi_tieu_nganh',
+            width: 150
         }];
         return (
-            <div style={{padding: 24, margin: '16px 0 10px 0', background: '#fff', minHeight: 360}}>
-                <Table dataSource={this.state.results} columns={columns} size="small" pagination={false}/>
+            <div style={{padding: 24, margin: '16px 0 10px 0', background: '#fff', minHeight: 500}}>
+                <Table dataSource={this.state.results} columns={columns} size="small"/>
             </div>
         );
     }

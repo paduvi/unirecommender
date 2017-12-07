@@ -1,5 +1,6 @@
 import React from 'react';
 import {Form, Avatar, Select, InputNumber, Button} from 'antd';
+import * as qs from 'query-string';
 
 const Store = window.require('electron-store');
 const store = new Store();
@@ -33,7 +34,7 @@ class RecommendForm extends React.Component {
         this.props.form.validateFieldsAndScroll((err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values);
-                this.props.history.push('/recommend');
+                this.props.history.push('/recommend?' + qs.stringify(values));
                 return;
             }
         });
@@ -41,7 +42,6 @@ class RecommendForm extends React.Component {
 
     render() {
         const {getFieldDecorator} = this.props.form;
-
 
         return (
             <div>
